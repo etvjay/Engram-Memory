@@ -1,0 +1,37 @@
+# Node
+node_modules/
+npm-debug.log*
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Local environment / secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Build outputs
+dist/
+dist-web/
+build/
+coverage/
+
+# Benchmark caches / large local datasets
+.data/
+data/raw/
+benchmarks/vendor/
+.cache/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Runtime artifacts that should not be committed accidentally
+*.log
+/tmp/
