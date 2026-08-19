@@ -1,0 +1,26 @@
+[
+  "execution_id",
+  "outcome_id",
+  "outcome_status",
+  "reason"
+]
+[
+  [
+    {
+      "type": "string",
+      "value": "run-a"
+    },
+    {
+      "type": "string",
+      "value": "outcome-a"
+    },
+    {
+      "type": "string",
+      "value": "FAILURE"
+    },
+    {
+      "type": "string",
+      "value": "thin-liquidity"
+    }
+  ]
+]

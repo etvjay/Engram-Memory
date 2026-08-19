@@ -1,0 +1,52 @@
+{
+  "experiment": "engram-runtime-death-continuity",
+  "timestamp": "2026-08-19T18:25:23Z",
+  "hydradb_commit": "6a2fbb192f37f51a93690a2ae2d2f5e27e6e4219",
+  "graph": {
+    "namespace": "engram",
+    "graph_id": "engram-memory",
+    "cell_id": "cell-0"
+  },
+  "physical_ids": {
+    "execution": 101,
+    "outcome": 201,
+    "operational_memory": 301
+  },
+  "semantic_ids": {
+    "execution": "run-a",
+    "outcome": "outcome-a",
+    "operational_memory": "memory-a"
+  },
+  "runtime_a_pid": "15972",
+  "runtime_b_pid": "16027",
+  "assertions": {
+    "execution_outcome_written": "TESTED",
+    "memory_provenance_written": "TESTED",
+    "runtime_a_terminated": "TESTED",
+    "fresh_runtime_started": "TESTED",
+    "execution_outcome_survived_restart": "TESTED",
+    "memory_provenance_survived_restart": "TESTED",
+    "semantic_edge_1_identical_after_restart": "TESTED",
+    "semantic_edge_2_identical_after_restart": "TESTED"
+  },
+  "evidence": [
+    "edge-1-write-before.json",
+    "edge-1-read-before.json",
+    "edge-1-read-after.json",
+    "edge-2-write-before.json",
+    "edge-2-read-before.json",
+    "edge-2-read-after.json",
+    "edge-1-before.canonical.json",
+    "edge-1-after.canonical.json",
+    "edge-2-before.canonical.json",
+    "edge-2-after.canonical.json",
+    "edge-1-continuity.diff",
+    "edge-2-continuity.diff",
+    "runtime-a.log",
+    "runtime-b.log",
+    "runtime-a.pid",
+    "runtime-b.pid",
+    "runtime-a-death.txt",
+    "hydradb-commit.txt"
+  ]
+}

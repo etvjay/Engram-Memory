@@ -1,0 +1,26 @@
+[
+  "memory_id",
+  "evidence_state",
+  "interpretation",
+  "outcome_id"
+]
+[
+  [
+    {
+      "type": "string",
+      "value": "memory-a"
+    },
+    {
+      "type": "string",
+      "value": "OBSERVED"
+    },
+    {
+      "type": "string",
+      "value": "Route C failed under thin liquidity"
+    },
+    {
+      "type": "string",
+      "value": "outcome-a"
+    }
+  ]
+]
