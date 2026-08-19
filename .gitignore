@@ -35,3 +35,6 @@ benchmarks/vendor/
 # Runtime artifacts that should not be committed accidentally
 *.log
 /tmp/
+
+# Audited reproducibility evidence
+!evidence/**/*.log

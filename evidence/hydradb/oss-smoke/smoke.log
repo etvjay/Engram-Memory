@@ -1,0 +1,3 @@
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.20s
+     Running `target/debug/examples/object_store_smoke`
+graph object-store smoke passed at epoch 10

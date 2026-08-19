@@ -1,0 +1,31 @@
+{
+  "run_id": "hydradb-oss-smoke-2026-08-19T17:44:05Z",
+  "timestamp": "2026-08-19T17:44:05Z",
+  "hydradb": {
+    "repository": "hydra-db/hydradb",
+    "commit": "6a2fbb192f37f51a93690a2ae2d2f5e27e6e4219",
+    "describe": "v0.1.1-2-g6a2fbb1"
+  },
+  "environment": {
+    "host": "ip-172-31-1-44",
+    "architecture": "x86_64",
+    "rust": "rustc 1.97.1 (8bab26f4f 2026-07-14)",
+    "just": "just 1.58.0"
+  },
+  "tests": {
+    "native_check": "TESTED",
+    "object_store_smoke": "TESTED",
+    "graphblas_smoke": "TESTED",
+    "runtime_smoke": "TESTED",
+    "http_api": "TESTED",
+    "bolt_api": "TESTED",
+    "readiness": "TESTED",
+    "graceful_shutdown": "TESTED"
+  },
+  "evidence": [
+    "native-check.log",
+    "smoke.log",
+    "smoke-graphblas.log",
+    "runtime-smoke.log"
+  ]
+}
