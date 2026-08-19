@@ -1,0 +1,8 @@
+{
+  "benchmark": "LongMemEval-V2",
+  "repository": "xiaowu0162/LongMemEval-V2",
+  "commit": "2cc8c540bdb87fe6761629b585e727e1c4704520",
+  "role": "primary-agent-experience-baseline",
+  "status": "PINNED",
+  "coverage": "NOT_RUN"
+}
