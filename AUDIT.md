@@ -380,6 +380,15 @@ Phrase diverse trajectory recall     TESTED / 87/104 = 83.65%
 Phrase diverse exact seed recall     TESTED / 74/104 = 71.15%
 Phrase diverse graph1 recoverable    TESTED / 78/104 = 75.00%
 RRF diverse graph1 recoverable       TESTED / 76/104 = 73.08%
+A3 graph-radius frontier              TESTED / enterprise-small literal cohort / n=104
+Phrase diverse exact seed             74/104 = 71.15%
+Phrase diverse radius-1 recoverable   78/104 = 75.00%
+Phrase diverse radius-2 recoverable   78/104 = 75.00%
+Phrase diverse radius-3 recoverable   81/104 = 77.88%
+Phrase diverse radius-5 recoverable   83/104 = 79.81%
+Phrase diverse trajectory upper bound 87/104 = 83.65%
+A3 production graph radius            DECIDED / radius=1
+A3 production seed policy             DECIDED / phrase-aware trajectory-diverse
 Hydra multi-question graph replay    REQUIRED / NOT_RUN
 Benchmark answer quality            TESTED / SMOKE / n_examples=1 / A2=0 A3=0
 Benchmark quality advantage         NOT OBSERVED / SMOKE / n_examples=1
