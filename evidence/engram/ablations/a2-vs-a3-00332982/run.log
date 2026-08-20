@@ -1,0 +1,8 @@
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+SHARED_INGEST=PASS
+TRAJECTORY_ID=00332982
+CANDIDATE_VERTEX_IDS_EQUAL=True
+A2_FLAT={"candidate_count": 1, "candidate_vertex_ids": [5796538955901109683], "context_items": 2, "graph_neighbor_states": 0, "hydra_state_reads": 1, "image_items": 1, "query_seconds": 0.04736961599701317, "retrieval_mode": "flat", "state_indices": [82]}
+A3_GRAPH={"candidate_count": 1, "candidate_vertex_ids": [5796538955901109683], "context_items": 6, "graph_neighbor_states": 2, "hydra_state_reads": 3, "image_items": 3, "query_seconds": 0.056704663002165034, "retrieval_mode": "graph", "state_indices": [81, 82, 83]}
+DELTA={"additional_context_items": 4, "additional_graph_neighbor_states": 2, "additional_hydra_state_reads": 2, "additional_image_items": 2, "additional_state_indices": [81, 83], "capability_loss_without_graph": "surrounding execution-state context is absent in A2 flat mode"}
+A2_A3_CONTROLLED_ABLATION=PASS

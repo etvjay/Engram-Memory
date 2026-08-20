@@ -1,0 +1,58 @@
+{
+  "trajectory_id": "00332982",
+  "query": "Referring to company protocol \"Work Assignment: Assign Incidents to Relevant Agents\" assign work to the agents with the following information:\nIncidents to assign: WAS1315884, WAS1315358, WAS1315961\n\nNetwork agents: Kathryn-Robert Ryan-Robinson, Natasha-Alicia Bradshaw-Sanchez\nSoftware agents: Michael-Elijah Chapman-Sims, Henry-Connor Contreras-Hernandez\n\nDon't forget to mark this task as \"Closed - complete\" once successfully completed.",
+  "controlled_variables": {
+    "candidate_selector": "local lexical overlap",
+    "candidate_top_k": 1,
+    "candidate_vertex_ids_equal": true,
+    "candidate_vertex_ids": [
+      5796538955901109683
+    ],
+    "same_trajectory": true,
+    "same_query": true,
+    "same_hydra_database": "default"
+  },
+  "a2_flat": {
+    "retrieval_mode": "flat",
+    "candidate_count": 1,
+    "candidate_vertex_ids": [
+      5796538955901109683
+    ],
+    "hydra_state_reads": 1,
+    "graph_neighbor_states": 0,
+    "context_items": 2,
+    "state_indices": [
+      82
+    ],
+    "image_items": 1,
+    "query_seconds": 0.04736961599701317
+  },
+  "a3_graph": {
+    "retrieval_mode": "graph",
+    "candidate_count": 1,
+    "candidate_vertex_ids": [
+      5796538955901109683
+    ],
+    "hydra_state_reads": 3,
+    "graph_neighbor_states": 2,
+    "context_items": 6,
+    "state_indices": [
+      81,
+      82,
+      83
+    ],
+    "image_items": 3,
+    "query_seconds": 0.056704663002165034
+  },
+  "delta": {
+    "additional_hydra_state_reads": 2,
+    "additional_graph_neighbor_states": 2,
+    "additional_state_indices": [
+      81,
+      83
+    ],
+    "additional_context_items": 4,
+    "additional_image_items": 2,
+    "capability_loss_without_graph": "surrounding execution-state context is absent in A2 flat mode"
+  }
+}

@@ -355,8 +355,9 @@ HydraDB OSS runtime                 TESTED
 HydraDB restart durability          TESTED
 HydraDB Bolt retrieval              TESTED
 HydraDB benchmark graph integration TESTED / A3 SMOKE
-A2 vs A3 graph ablation             NOT_RUN
-Graph-native advantage claim        BLOCKED UNTIL A2 vs A3 EVIDENCE
+A2 vs A3 graph ablation             TESTED / SMOKE / n_examples=1
+Graph capability advantage          TESTED / SMOKE
+Benchmark quality advantage         NOT_RUN
 Engram causal proof on Hydra        PROPOSED
 Temporal repair                     PROPOSED
 Submission repo eligibility         PASS — fresh repository

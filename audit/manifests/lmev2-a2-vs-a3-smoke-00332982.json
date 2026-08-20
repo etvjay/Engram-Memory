@@ -1,0 +1,139 @@
+{
+  "run_id": "lmev2-a2-vs-a3-smoke-00332982",
+  "started_at": "2026-08-20T06:40:38.446871+00:00",
+  "status": "TESTED",
+  "git": {
+    "submission_commit": "a095c5cf7463f7ffc2a129fc9ee850c126c78d70",
+    "engram_upstream_commit": null,
+    "hydradb_commit": "6a2fbb192f37f51a93690a2ae2d2f5e27e6e4219"
+  },
+  "benchmark": {
+    "name": "LongMemEval-V2",
+    "source_commit": "2cc8c540bdb87fe6761629b585e727e1c4704520",
+    "split": "small-substrate-ablation-smoke",
+    "coverage": "SMOKE",
+    "n_examples": 1,
+    "dataset_filter": "Exact trajectory id 00332982 supplied via --trajectory-id",
+    "trajectory_id": "00332982",
+    "query_selection": "No --query supplied; visible trajectory goal used"
+  },
+  "models": {
+    "retrieval_model": null,
+    "reader_model": null,
+    "notes": "No model inference or QA scoring used."
+  },
+  "controlled_variables": {
+    "candidate_selector": "local lexical overlap",
+    "candidate_top_k": 1,
+    "candidate_vertex_ids_equal": true,
+    "candidate_vertex_ids": [
+      5796538955901109683
+    ],
+    "same_trajectory": true,
+    "same_query": true,
+    "same_hydra_database": "default"
+  },
+  "retrieval": {
+    "a2": {
+      "retrieval_mode": "flat",
+      "candidate_count": 1,
+      "candidate_vertex_ids": [
+        5796538955901109683
+      ],
+      "hydra_state_reads": 1,
+      "graph_neighbor_states": 0,
+      "context_items": 2,
+      "state_indices": [
+        82
+      ],
+      "image_items": 1,
+      "query_seconds": 0.04736961599701317
+    },
+    "a3": {
+      "retrieval_mode": "graph",
+      "candidate_count": 1,
+      "candidate_vertex_ids": [
+        5796538955901109683
+      ],
+      "hydra_state_reads": 3,
+      "graph_neighbor_states": 2,
+      "context_items": 6,
+      "state_indices": [
+        81,
+        82,
+        83
+      ],
+      "image_items": 3,
+      "query_seconds": 0.056704663002165034
+    },
+    "delta": {
+      "additional_hydra_state_reads": 2,
+      "additional_graph_neighbor_states": 2,
+      "additional_state_indices": [
+        81,
+        83
+      ],
+      "additional_context_items": 4,
+      "additional_image_items": 2,
+      "capability_loss_without_graph": "surrounding execution-state context is absent in A2 flat mode"
+    }
+  },
+  "hydradb": {
+    "repository": "hydra-db/hydradb",
+    "commit": "6a2fbb192f37f51a93690a2ae2d2f5e27e6e4219",
+    "runtime_pid": 16027,
+    "bolt_uri": "bolt://127.0.0.1:7687",
+    "database": "default",
+    "graph_namespace": "engram",
+    "graph_id": "engram-memory",
+    "cell_id": "cell-0",
+    "a2_hydra_read": "PASS",
+    "a3_hydra_read": "PASS",
+    "a3_typed_graph_traversal": "PASS",
+    "runtime_remained_live": "PASS"
+  },
+  "hardware": {
+    "hostname": "ip-172-31-1-44",
+    "architecture": "x86_64",
+    "cpu_count": 2
+  },
+  "metrics": {
+    "candidate_vertex_ids_equal": true,
+    "a2_hydra_state_reads": 1,
+    "a3_hydra_state_reads": 3,
+    "additional_hydra_state_reads": 2,
+    "a2_graph_neighbor_states": 0,
+    "a3_graph_neighbor_states": 2,
+    "additional_state_indices": [
+      81,
+      83
+    ],
+    "a2_context_items": 2,
+    "a3_context_items": 6,
+    "additional_context_items": 4,
+    "a2_image_items": 1,
+    "a3_image_items": 3,
+    "additional_image_items": 2,
+    "a2_query_seconds": 0.04736961599701317,
+    "a3_query_seconds": 0.056704663002165034
+  },
+  "claims": {
+    "graph_capability_loss_demonstrated": true,
+    "graph_quality_advantage_demonstrated": false,
+    "benchmark_accuracy_advantage_demonstrated": false
+  },
+  "artifacts": [
+    "evidence/engram/ablations/a2-vs-a3-00332982/result.json",
+    "evidence/engram/ablations/a2-vs-a3-00332982/run.log"
+  ],
+  "notes": [
+    "A2 and A3 used the same trajectory and query.",
+    "A2 and A3 selected the identical candidate vertex.",
+    "A2 still retrieved the selected state through HydraDB.",
+    "A3 additionally used typed NEXT_STATE graph traversal.",
+    "Removing graph traversal removed states 81 and 83.",
+    "This demonstrates graph capability loss at SMOKE coverage.",
+    "No LongMemEval-V2 answer-quality advantage is claimed."
+  ],
+  "recorded_at": "2026-08-20T06:42:27.073678+00:00"
+}
