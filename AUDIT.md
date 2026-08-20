@@ -350,13 +350,18 @@ Benchmark authority order           DEFINED
 LongMemEval baseline                DEFINED / NOT_RUN
 LongMemEval-V2 substrate            FULL MULTIMODAL VALIDATED / SCORE NOT_RUN
 LongMemEval-V2 A3 smoke             TESTED / SMOKE / n_examples=1
+LongMemEval-V2 official question    TESTED / SMOKE / n_examples=1
+Official Small haystack isolation   TESTED / SMOKE / 100 trajectories
+Bounded Hydra evidence storage      TESTED / SMOKE
+Hydra evidence reconstruction       TESTED / SMOKE
 BEAM baseline                       DEFINED / NOT_RUN
 HydraDB OSS runtime                 TESTED
 HydraDB restart durability          TESTED
 HydraDB Bolt retrieval              TESTED
-HydraDB benchmark graph integration TESTED / A3 SMOKE
-A2 vs A3 graph ablation             TESTED / SMOKE / n_examples=1
-Graph capability advantage          TESTED / SMOKE
+HydraDB benchmark graph integration TESTED / OFFICIAL-QUESTION SMOKE
+A2 vs A3 graph ablation             TESTED / OFFICIAL-QUESTION SMOKE / n_examples=1
+Graph capability advantage          TESTED / OFFICIAL-QUESTION SMOKE
+Benchmark answer quality            NOT_RUN
 Benchmark quality advantage         NOT_RUN
 Engram causal proof on Hydra        PROPOSED
 Temporal repair                     PROPOSED
