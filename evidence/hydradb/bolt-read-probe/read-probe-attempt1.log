@@ -1,0 +1,6 @@
+URI=bolt://127.0.0.1:7687
+DATABASE=default
+GRAPH_NAMESPACE=engram
+GRAPH_ID=engram-memory
+GRAPH_CELL_ID=cell-0
+CONNECTIVITY=PASS

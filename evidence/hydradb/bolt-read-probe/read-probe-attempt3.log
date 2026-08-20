@@ -1,0 +1,13 @@
+URI=bolt://127.0.0.1:7687
+DATABASE=default
+CONNECTIVITY=PASS
+EXECUTION_VERTEX=PASS
+execution_id=run-a
+PRODUCED_TRAVERSAL=PASS
+run-a -> outcome-a status=FAILURE reason=thin-liquidity
+PROVENANCE_TRAVERSAL=PASS
+memory_id=memory-a
+evidence_state=OBSERVED
+interpretation=Route C failed under thin liquidity
+outcome_id=outcome-a
+HYDRA_BOLT_READ_PATH=PASS

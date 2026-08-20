@@ -1,0 +1,22 @@
+URI=bolt://127.0.0.1:7687
+DATABASE=default
+CONNECTIVITY=PASS
+VERTEX_101=PASS
+Traceback (most recent call last):
+  File "<stdin>", line 33, in <module>
+  File "/home/ubuntu/work/Engram-Memory/.venv-hydra/lib/python3.12/site-packages/neo4j/_sync/work/session.py", line 338, in run
+    auto_result._run(
+  File "/home/ubuntu/work/Engram-Memory/.venv-hydra/lib/python3.12/site-packages/neo4j/_sync/work/result.py", line 240, in _run
+    self._attach()
+  File "/home/ubuntu/work/Engram-Memory/.venv-hydra/lib/python3.12/site-packages/neo4j/_sync/work/result.py", line 441, in _attach
+    self._connection.fetch_message()
+  File "/home/ubuntu/work/Engram-Memory/.venv-hydra/lib/python3.12/site-packages/neo4j/_sync/io/_common.py", line 193, in inner
+    func(*args, **kwargs)
+  File "/home/ubuntu/work/Engram-Memory/.venv-hydra/lib/python3.12/site-packages/neo4j/_sync/io/_bolt.py", line 868, in fetch_message
+    res = self._process_message(tag, fields)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/work/Engram-Memory/.venv-hydra/lib/python3.12/site-packages/neo4j/_sync/io/_bolt5.py", line 496, in _process_message
+    response.on_failure(summary_metadata or {})
+  File "/home/ubuntu/work/Engram-Memory/.venv-hydra/lib/python3.12/site-packages/neo4j/_sync/io/_common.py", line 263, in on_failure
+    raise self._hydrate_error(metadata)
+neo4j.exceptions.CypherSyntaxError: {neo4j_code: Neo.ClientError.Statement.InvalidSyntax} {message: OpenCypher query is not supported yet: relationship pattern must have exactly one type in Query engine} {gql_status: 50N42} {gql_status_description: error: general processing exception - unexpected error. OpenCypher query is not supported yet: relationship pattern must have exactly one type in Query engine}

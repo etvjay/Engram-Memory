@@ -1,0 +1,53 @@
+{
+  "test": "hydradb-bolt-read-path",
+  "status": "TESTED",
+  "hydradb_repository": "hydra-db/hydradb",
+  "hydradb_commit": "6a2fbb192f37f51a93690a2ae2d2f5e27e6e4219",
+  "runtime_pid": 16027,
+  "connection": {
+    "bolt_uri": "bolt://127.0.0.1:7687",
+    "database": "default",
+    "graph_namespace": "engram",
+    "graph_id": "engram-memory",
+    "cell_id": "cell-0"
+  },
+  "checks": {
+    "bolt_connectivity": "PASS",
+    "persisted_vertex_read": "PASS",
+    "typed_produced_traversal": "PASS",
+    "memory_provenance_traversal": "PASS",
+    "runtime_remained_live": "PASS"
+  },
+  "observed_state": {
+    "execution_id": "run-a",
+    "outcome_id": "outcome-a",
+    "outcome_status": "FAILURE",
+    "reason": "thin-liquidity",
+    "memory_id": "memory-a",
+    "evidence_state": "OBSERVED",
+    "interpretation": "Route C failed under thin liquidity"
+  },
+  "compatibility_findings": [
+    {
+      "attempt": 1,
+      "result": "EXPECTED_UNSUPPORTED_SYNTAX",
+      "finding": "bare RETURN is unsupported by pinned HydraDB row execution"
+    },
+    {
+      "attempt": 2,
+      "result": "EXPECTED_UNSUPPORTED_SYNTAX",
+      "finding": "relationship MATCH requires exactly one explicit relationship type"
+    },
+    {
+      "attempt": 3,
+      "result": "PASS",
+      "finding": "typed MATCH ... RETURN works through Bolt"
+    }
+  ],
+  "artifacts": [
+    "evidence/hydradb/bolt-read-probe/read-probe-attempt1.log",
+    "evidence/hydradb/bolt-read-probe/read-probe-attempt2.log",
+    "evidence/hydradb/bolt-read-probe/read-probe-attempt3.log"
+  ],
+  "recorded_at": "2026-08-20T06:18:55.309037+00:00"
+}
