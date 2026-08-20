@@ -1,0 +1,431 @@
+{
+  "status": "POSTHOC_DIAGNOSTIC",
+  "question_id": "01307e07",
+  "gold_phrases": [
+    "Incident Mobile",
+    "Incident Portal",
+    "My Open Incidents"
+  ],
+  "haystack_trajectories": 100,
+  "a2_core_refs": [
+    [
+      "25a8b10b",
+      5
+    ],
+    [
+      "4db02b16",
+      4
+    ],
+    [
+      "933a1321",
+      8
+    ]
+  ],
+  "a3_retrieved_refs": [
+    [
+      "25a8b10b",
+      4
+    ],
+    [
+      "25a8b10b",
+      5
+    ],
+    [
+      "25a8b10b",
+      6
+    ],
+    [
+      "4db02b16",
+      3
+    ],
+    [
+      "4db02b16",
+      4
+    ],
+    [
+      "4db02b16",
+      5
+    ],
+    [
+      "933a1321",
+      7
+    ],
+    [
+      "933a1321",
+      8
+    ],
+    [
+      "933a1321",
+      9
+    ]
+  ],
+  "a3_neighbor_refs": [
+    [
+      "25a8b10b",
+      4
+    ],
+    [
+      "25a8b10b",
+      6
+    ],
+    [
+      "4db02b16",
+      3
+    ],
+    [
+      "4db02b16",
+      5
+    ],
+    [
+      "933a1321",
+      7
+    ],
+    [
+      "933a1321",
+      9
+    ]
+  ],
+  "retrieved_gold_text_hits": [],
+  "haystack_gold_text_hits": [
+    {
+      "trajectory_id": "1d56a4d6",
+      "state_index": 11,
+      "step": 11,
+      "screenshot": "/home/ubuntu/work/LongMemEval-V2/data/longmemeval-v2-full/trajectory_screenshots/enterprise_screenshots_base/1d56a4d6/11.png",
+      "gold_hits": [
+        "Incident Mobile",
+        "Incident Portal",
+        "My Open Incidents"
+      ],
+      "anchor_hits": [
+        "Filters",
+        "Edit personal filters",
+        "-- None --",
+        "Incidents"
+      ],
+      "is_a2_core": false,
+      "is_a3_retrieved": false,
+      "is_a3_graph_neighbor": false
+    }
+  ],
+  "missed_gold_text_states": [
+    {
+      "trajectory_id": "1d56a4d6",
+      "state_index": 11,
+      "step": 11,
+      "screenshot": "/home/ubuntu/work/LongMemEval-V2/data/longmemeval-v2-full/trajectory_screenshots/enterprise_screenshots_base/1d56a4d6/11.png",
+      "gold_hits": [
+        "Incident Mobile",
+        "Incident Portal",
+        "My Open Incidents"
+      ],
+      "anchor_hits": [
+        "Filters",
+        "Edit personal filters",
+        "-- None --",
+        "Incidents"
+      ],
+      "is_a2_core": false,
+      "is_a3_retrieved": false,
+      "is_a3_graph_neighbor": false
+    }
+  ],
+  "top_anchor_states": [
+    {
+      "trajectory_id": "1d56a4d6",
+      "state_index": 11,
+      "step": 11,
+      "screenshot": "/home/ubuntu/work/LongMemEval-V2/data/longmemeval-v2-full/trajectory_screenshots/enterprise_screenshots_base/1d56a4d6/11.png",
+      "gold_hits": [
+        "Incident Mobile",
+        "Incident Portal",
+        "My Open Incidents"
+      ],
+      "anchor_hits": [
+        "Filters",
+        "Edit personal filters",
+        "-- None --",
+        "Incidents"
+      ],
+      "is_a2_core": false,
+      "is_a3_retrieved": false,
+      "is_a3_graph_neighbor": false
+    },
+    {
+      "trajectory_id": "14825d3a",
+      "state_index": 2,
+      "step": 2,
+      "screenshot": "/home/ubuntu/work/LongMemEval-V2/data/longmemeval-v2-full/trajectory_screenshots/enterprise_screenshots_base/14825d3a/2.png",
+      "gold_hits": [],
+      "anchor_hits": [
+        "Filters",
+        "-- None --",
+        "Incidents"
+      ],
+      "is_a2_core": false,
+      "is_a3_retrieved": false,
+      "is_a3_graph_neighbor": false
+    },
+    {
+      "trajectory_id": "4919aae9",
+      "state_index": 23,
+      "step": 23,
+      "screenshot": "/home/ubuntu/work/LongMemEval-V2/data/longmemeval-v2-full/trajectory_screenshots/enterprise_screenshots_base/4919aae9/23.png",
+      "gold_hits": [],
+      "anchor_hits": [
+        "Filters",
+        "-- None --",
+        "Incidents"
+      ],
+      "is_a2_core": false,
+      "is_a3_retrieved": false,
+      "is_a3_graph_neighbor": false
+    },
+    {
+      "trajectory_id": "9c420e86",
+      "state_index": 16,
+      "step": 16,
+      "screenshot": "/home/ubuntu/work/LongMemEval-V2/data/longmemeval-v2-full/trajectory_screenshots/enterprise_screenshots_base/9c420e86/16.png",
+      "gold_hits": [],
+      "anchor_hits": [
+        "Filters",
+        "-- None --",
+        "Incidents"
+      ],
+      "is_a2_core": false,
+      "is_a3_retrieved": false,
+      "is_a3_graph_neighbor": false
+    },
+    {
+      "trajectory_id": "013696c4",
+      "state_index": 20,
+      "step": 20,
+      "screenshot": "/home/ubuntu/work/LongMemEval-V2/data/longmemeval-v2-full/trajectory_screenshots/enterprise_screenshots_base/013696c4/20.png",
+      "gold_hits": [],
+      "anchor_hits": [
+        "-- None --",
+        "Incidents"
+      ],
+      "is_a2_core": false,
+      "is_a3_retrieved": false,
+      "is_a3_graph_neighbor": false
+    },
+    {
+      "trajectory_id": "013696c4",
+      "state_index": 26,
+      "step": 26,
+      "screenshot": "/home/ubuntu/work/LongMemEval-V2/data/longmemeval-v2-full/trajectory_screenshots/enterprise_screenshots_base/013696c4/26.png",
+      "gold_hits": [],
+      "anchor_hits": [
+        "-- None --",
+        "Incidents"
+      ],
+      "is_a2_core": false,
+      "is_a3_retrieved": false,
+      "is_a3_graph_neighbor": false
+    },
+    {
+      "trajectory_id": "013696c4",
+      "state_index": 27,
+      "step": 27,
+      "screenshot": "/home/ubuntu/work/LongMemEval-V2/data/longmemeval-v2-full/trajectory_screenshots/enterprise_screenshots_base/013696c4/27.png",
+      "gold_hits": [],
+      "anchor_hits": [
+        "Filters",
+        "-- None --"
+      ],
+      "is_a2_core": false,
+      "is_a3_retrieved": false,
+      "is_a3_graph_neighbor": false
+    },
+    {
+      "trajectory_id": "013696c4",
+      "state_index": 37,
+      "step": 37,
+      "screenshot": "/home/ubuntu/work/LongMemEval-V2/data/longmemeval-v2-full/trajectory_screenshots/enterprise_screenshots_base/013696c4/37.png",
+      "gold_hits": [],
+      "anchor_hits": [
+        "Filters",
+        "-- None --"
+      ],
+      "is_a2_core": false,
+      "is_a3_retrieved": false,
+      "is_a3_graph_neighbor": false
+    },
+    {
+      "trajectory_id": "02dad10c",
+      "state_index": 0,
+      "step": 0,
+      "screenshot": "/home/ubuntu/work/LongMemEval-V2/data/longmemeval-v2-full/trajectory_screenshots/enterprise_screenshots_base/02dad10c/0.png",
+      "gold_hits": [],
+      "anchor_hits": [
+        "-- None --",
+        "Incidents"
+      ],
+      "is_a2_core": false,
+      "is_a3_retrieved": false,
+      "is_a3_graph_neighbor": false
+    },
+    {
+      "trajectory_id": "02dad10c",
+      "state_index": 1,
+      "step": 1,
+      "screenshot": "/home/ubuntu/work/LongMemEval-V2/data/longmemeval-v2-full/trajectory_screenshots/enterprise_screenshots_base/02dad10c/1.png",
+      "gold_hits": [],
+      "anchor_hits": [
+        "-- None --",
+        "Incidents"
+      ],
+      "is_a2_core": false,
+      "is_a3_retrieved": false,
+      "is_a3_graph_neighbor": false
+    },
+    {
+      "trajectory_id": "02dad10c",
+      "state_index": 2,
+      "step": 2,
+      "screenshot": "/home/ubuntu/work/LongMemEval-V2/data/longmemeval-v2-full/trajectory_screenshots/enterprise_screenshots_base/02dad10c/2.png",
+      "gold_hits": [],
+      "anchor_hits": [
+        "-- None --",
+        "Incidents"
+      ],
+      "is_a2_core": false,
+      "is_a3_retrieved": false,
+      "is_a3_graph_neighbor": false
+    },
+    {
+      "trajectory_id": "02dad10c",
+      "state_index": 5,
+      "step": 5,
+      "screenshot": "/home/ubuntu/work/LongMemEval-V2/data/longmemeval-v2-full/trajectory_screenshots/enterprise_screenshots_base/02dad10c/5.png",
+      "gold_hits": [],
+      "anchor_hits": [
+        "Filters",
+        "Incidents"
+      ],
+      "is_a2_core": false,
+      "is_a3_retrieved": false,
+      "is_a3_graph_neighbor": false
+    },
+    {
+      "trajectory_id": "02dad10c",
+      "state_index": 6,
+      "step": 6,
+      "screenshot": "/home/ubuntu/work/LongMemEval-V2/data/longmemeval-v2-full/trajectory_screenshots/enterprise_screenshots_base/02dad10c/6.png",
+      "gold_hits": [],
+      "anchor_hits": [
+        "Filters",
+        "Incidents"
+      ],
+      "is_a2_core": false,
+      "is_a3_retrieved": false,
+      "is_a3_graph_neighbor": false
+    },
+    {
+      "trajectory_id": "02dad10c",
+      "state_index": 7,
+      "step": 7,
+      "screenshot": "/home/ubuntu/work/LongMemEval-V2/data/longmemeval-v2-full/trajectory_screenshots/enterprise_screenshots_base/02dad10c/7.png",
+      "gold_hits": [],
+      "anchor_hits": [
+        "Filters",
+        "Incidents"
+      ],
+      "is_a2_core": false,
+      "is_a3_retrieved": false,
+      "is_a3_graph_neighbor": false
+    },
+    {
+      "trajectory_id": "02dad10c",
+      "state_index": 10,
+      "step": 10,
+      "screenshot": "/home/ubuntu/work/LongMemEval-V2/data/longmemeval-v2-full/trajectory_screenshots/enterprise_screenshots_base/02dad10c/10.png",
+      "gold_hits": [],
+      "anchor_hits": [
+        "Filters",
+        "Incidents"
+      ],
+      "is_a2_core": false,
+      "is_a3_retrieved": false,
+      "is_a3_graph_neighbor": false
+    },
+    {
+      "trajectory_id": "02dad10c",
+      "state_index": 27,
+      "step": 27,
+      "screenshot": "/home/ubuntu/work/LongMemEval-V2/data/longmemeval-v2-full/trajectory_screenshots/enterprise_screenshots_base/02dad10c/27.png",
+      "gold_hits": [],
+      "anchor_hits": [
+        "-- None --",
+        "Incidents"
+      ],
+      "is_a2_core": false,
+      "is_a3_retrieved": false,
+      "is_a3_graph_neighbor": false
+    },
+    {
+      "trajectory_id": "02dad10c",
+      "state_index": 28,
+      "step": 28,
+      "screenshot": "/home/ubuntu/work/LongMemEval-V2/data/longmemeval-v2-full/trajectory_screenshots/enterprise_screenshots_base/02dad10c/28.png",
+      "gold_hits": [],
+      "anchor_hits": [
+        "-- None --",
+        "Incidents"
+      ],
+      "is_a2_core": false,
+      "is_a3_retrieved": false,
+      "is_a3_graph_neighbor": false
+    },
+    {
+      "trajectory_id": "02dad10c",
+      "state_index": 29,
+      "step": 29,
+      "screenshot": "/home/ubuntu/work/LongMemEval-V2/data/longmemeval-v2-full/trajectory_screenshots/enterprise_screenshots_base/02dad10c/29.png",
+      "gold_hits": [],
+      "anchor_hits": [
+        "-- None --",
+        "Incidents"
+      ],
+      "is_a2_core": false,
+      "is_a3_retrieved": false,
+      "is_a3_graph_neighbor": false
+    },
+    {
+      "trajectory_id": "02dad10c",
+      "state_index": 30,
+      "step": 30,
+      "screenshot": "/home/ubuntu/work/LongMemEval-V2/data/longmemeval-v2-full/trajectory_screenshots/enterprise_screenshots_base/02dad10c/30.png",
+      "gold_hits": [],
+      "anchor_hits": [
+        "-- None --",
+        "Incidents"
+      ],
+      "is_a2_core": false,
+      "is_a3_retrieved": false,
+      "is_a3_graph_neighbor": false
+    },
+    {
+      "trajectory_id": "02dad10c",
+      "state_index": 31,
+      "step": 31,
+      "screenshot": "/home/ubuntu/work/LongMemEval-V2/data/longmemeval-v2-full/trajectory_screenshots/enterprise_screenshots_base/02dad10c/31.png",
+      "gold_hits": [],
+      "anchor_hits": [
+        "-- None --",
+        "Incidents"
+      ],
+      "is_a2_core": false,
+      "is_a3_retrieved": false,
+      "is_a3_graph_neighbor": false
+    }
+  ],
+  "verdict": "GOLD_TEXT_PRESENT_IN_HAYSTACK_RETRIEVAL_FAILURE",
+  "integrity": {
+    "gold_used_during_original_memory_query": false,
+    "gold_used_during_original_scoring_input": false,
+    "gold_used_only_posthoc_for_failure_analysis": true,
+    "retrieval_result_was_frozen_before_this_diagnostic": true
+  }
+}

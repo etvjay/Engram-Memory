@@ -1,0 +1,54 @@
+========================================================================
+QUESTION / RETRIEVAL
+========================================================================
+QUESTION_ID=01307e07
+HAYSTACK_TRAJECTORIES=100
+A2_CORE_STATES=3
+A3_RETRIEVED_STATES=9
+A3_GRAPH_NEIGHBORS=6
+
+A2_CORE_REFS=[('25a8b10b', 5), ('4db02b16', 4), ('933a1321', 8)]
+A3_RETRIEVED_REFS=[('25a8b10b', 4), ('25a8b10b', 5), ('25a8b10b', 6), ('4db02b16', 3), ('4db02b16', 4), ('4db02b16', 5), ('933a1321', 7), ('933a1321', 8), ('933a1321', 9)]
+
+========================================================================
+A. GOLD PHRASES INSIDE THE 9 RETRIEVED A3 STATES
+========================================================================
+RETRIEVED_GOLD_TEXT_HITS=0
+
+========================================================================
+B. GOLD PHRASES ANYWHERE IN EXACT 100-TRAJECTORY HAYSTACK
+========================================================================
+HAYSTACK_GOLD_HIT trajectory=1d56a4d6 state=11 step=11 retrieved=False phrases=['Incident Mobile', 'Incident Portal', 'My Open Incidents'] screenshot=/home/ubuntu/work/LongMemEval-V2/data/longmemeval-v2-full/trajectory_screenshots/enterprise_screenshots_base/1d56a4d6/11.png
+
+========================================================================
+C. QUESTION-ANCHOR STATES
+========================================================================
+ANCHOR_STATE trajectory=1d56a4d6 state=11 retrieved=False anchors=['Filters', 'Edit personal filters', '-- None --', 'Incidents'] screenshot=/home/ubuntu/work/LongMemEval-V2/data/longmemeval-v2-full/trajectory_screenshots/enterprise_screenshots_base/1d56a4d6/11.png
+ANCHOR_STATE trajectory=14825d3a state=2 retrieved=False anchors=['Filters', '-- None --', 'Incidents'] screenshot=/home/ubuntu/work/LongMemEval-V2/data/longmemeval-v2-full/trajectory_screenshots/enterprise_screenshots_base/14825d3a/2.png
+ANCHOR_STATE trajectory=4919aae9 state=23 retrieved=False anchors=['Filters', '-- None --', 'Incidents'] screenshot=/home/ubuntu/work/LongMemEval-V2/data/longmemeval-v2-full/trajectory_screenshots/enterprise_screenshots_base/4919aae9/23.png
+ANCHOR_STATE trajectory=9c420e86 state=16 retrieved=False anchors=['Filters', '-- None --', 'Incidents'] screenshot=/home/ubuntu/work/LongMemEval-V2/data/longmemeval-v2-full/trajectory_screenshots/enterprise_screenshots_base/9c420e86/16.png
+ANCHOR_STATE trajectory=013696c4 state=20 retrieved=False anchors=['-- None --', 'Incidents'] screenshot=/home/ubuntu/work/LongMemEval-V2/data/longmemeval-v2-full/trajectory_screenshots/enterprise_screenshots_base/013696c4/20.png
+ANCHOR_STATE trajectory=013696c4 state=26 retrieved=False anchors=['-- None --', 'Incidents'] screenshot=/home/ubuntu/work/LongMemEval-V2/data/longmemeval-v2-full/trajectory_screenshots/enterprise_screenshots_base/013696c4/26.png
+ANCHOR_STATE trajectory=013696c4 state=27 retrieved=False anchors=['Filters', '-- None --'] screenshot=/home/ubuntu/work/LongMemEval-V2/data/longmemeval-v2-full/trajectory_screenshots/enterprise_screenshots_base/013696c4/27.png
+ANCHOR_STATE trajectory=013696c4 state=37 retrieved=False anchors=['Filters', '-- None --'] screenshot=/home/ubuntu/work/LongMemEval-V2/data/longmemeval-v2-full/trajectory_screenshots/enterprise_screenshots_base/013696c4/37.png
+ANCHOR_STATE trajectory=02dad10c state=0 retrieved=False anchors=['-- None --', 'Incidents'] screenshot=/home/ubuntu/work/LongMemEval-V2/data/longmemeval-v2-full/trajectory_screenshots/enterprise_screenshots_base/02dad10c/0.png
+ANCHOR_STATE trajectory=02dad10c state=1 retrieved=False anchors=['-- None --', 'Incidents'] screenshot=/home/ubuntu/work/LongMemEval-V2/data/longmemeval-v2-full/trajectory_screenshots/enterprise_screenshots_base/02dad10c/1.png
+ANCHOR_STATE trajectory=02dad10c state=2 retrieved=False anchors=['-- None --', 'Incidents'] screenshot=/home/ubuntu/work/LongMemEval-V2/data/longmemeval-v2-full/trajectory_screenshots/enterprise_screenshots_base/02dad10c/2.png
+ANCHOR_STATE trajectory=02dad10c state=5 retrieved=False anchors=['Filters', 'Incidents'] screenshot=/home/ubuntu/work/LongMemEval-V2/data/longmemeval-v2-full/trajectory_screenshots/enterprise_screenshots_base/02dad10c/5.png
+ANCHOR_STATE trajectory=02dad10c state=6 retrieved=False anchors=['Filters', 'Incidents'] screenshot=/home/ubuntu/work/LongMemEval-V2/data/longmemeval-v2-full/trajectory_screenshots/enterprise_screenshots_base/02dad10c/6.png
+ANCHOR_STATE trajectory=02dad10c state=7 retrieved=False anchors=['Filters', 'Incidents'] screenshot=/home/ubuntu/work/LongMemEval-V2/data/longmemeval-v2-full/trajectory_screenshots/enterprise_screenshots_base/02dad10c/7.png
+ANCHOR_STATE trajectory=02dad10c state=10 retrieved=False anchors=['Filters', 'Incidents'] screenshot=/home/ubuntu/work/LongMemEval-V2/data/longmemeval-v2-full/trajectory_screenshots/enterprise_screenshots_base/02dad10c/10.png
+ANCHOR_STATE trajectory=02dad10c state=27 retrieved=False anchors=['-- None --', 'Incidents'] screenshot=/home/ubuntu/work/LongMemEval-V2/data/longmemeval-v2-full/trajectory_screenshots/enterprise_screenshots_base/02dad10c/27.png
+ANCHOR_STATE trajectory=02dad10c state=28 retrieved=False anchors=['-- None --', 'Incidents'] screenshot=/home/ubuntu/work/LongMemEval-V2/data/longmemeval-v2-full/trajectory_screenshots/enterprise_screenshots_base/02dad10c/28.png
+ANCHOR_STATE trajectory=02dad10c state=29 retrieved=False anchors=['-- None --', 'Incidents'] screenshot=/home/ubuntu/work/LongMemEval-V2/data/longmemeval-v2-full/trajectory_screenshots/enterprise_screenshots_base/02dad10c/29.png
+ANCHOR_STATE trajectory=02dad10c state=30 retrieved=False anchors=['-- None --', 'Incidents'] screenshot=/home/ubuntu/work/LongMemEval-V2/data/longmemeval-v2-full/trajectory_screenshots/enterprise_screenshots_base/02dad10c/30.png
+ANCHOR_STATE trajectory=02dad10c state=31 retrieved=False anchors=['-- None --', 'Incidents'] screenshot=/home/ubuntu/work/LongMemEval-V2/data/longmemeval-v2-full/trajectory_screenshots/enterprise_screenshots_base/02dad10c/31.png
+
+========================================================================
+VERDICT
+========================================================================
+RETRIEVED_GOLD_TEXT_HITS=0
+HAYSTACK_GOLD_TEXT_HITS=1
+MISSED_GOLD_TEXT_STATES=1
+DIAGNOSTIC_VERDICT=GOLD_TEXT_PRESENT_IN_HAYSTACK_RETRIEVAL_FAILURE
+POSTHOC_EVIDENCE_LOCATION_DIAGNOSTIC=PASS

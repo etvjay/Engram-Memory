@@ -362,6 +362,9 @@ HydraDB benchmark graph integration TESTED / OFFICIAL-QUESTION SMOKE
 A2 vs A3 graph ablation             TESTED / OFFICIAL-QUESTION SMOKE / n_examples=1
 Graph capability advantage          TESTED / OFFICIAL-QUESTION SMOKE
 A3 context-budget truncation        TESTED / SMOKE / 27277 -> 11265 tokens
+A3 candidate-core ordering repair   TESTED / SMOKE / all 3 cores preserved
+A3 repaired local-reader score      TESTED / SMOKE / score=0
+Seed retrieval relevance failure    TESTED / SMOKE / gold state 1d56a4d6:11 missed
 Benchmark answer quality            TESTED / SMOKE / n_examples=1 / A2=0 A3=0
 Benchmark quality advantage         NOT OBSERVED / SMOKE / n_examples=1
 Engram causal proof on Hydra        PROPOSED
