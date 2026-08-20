@@ -4,6 +4,7 @@ npm-debug.log*
 
 # Python
 .venv/
+.venv-hydra/
 venv/
 __pycache__/
 *.py[cod]
