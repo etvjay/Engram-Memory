@@ -1,0 +1,99 @@
+{
+  "status": "PRISM11_LIVE_A2_A3_PASS",
+  "question_id": "01307e07",
+  "haystack_size": 100,
+  "expected_selection": [
+    [
+      "1d56a4d6",
+      11
+    ],
+    [
+      "9c420e86",
+      68
+    ],
+    [
+      "fa42acc1",
+      3
+    ]
+  ],
+  "a2_selection": [
+    [
+      "1d56a4d6",
+      11
+    ],
+    [
+      "9c420e86",
+      68
+    ],
+    [
+      "fa42acc1",
+      3
+    ]
+  ],
+  "a3_selection": [
+    [
+      "1d56a4d6",
+      11
+    ],
+    [
+      "9c420e86",
+      68
+    ],
+    [
+      "fa42acc1",
+      3
+    ]
+  ],
+  "a2": {
+    "query_seconds": 6.017887107998831,
+    "context_items": 6,
+    "candidate_strategy": "phrase_trajectory_bm25_v1",
+    "retrieval_mode": "flat",
+    "graph_radius": 1,
+    "candidate_vertex_ids": [
+      8102870490173997925,
+      4903995652722540026,
+      8344407657347728233
+    ],
+    "hydra_state_reads": 3,
+    "graph_neighbor_states": 0,
+    "context_ordering": "candidate-core-first"
+  },
+  "a3": {
+    "query_seconds": 6.266467349007144,
+    "context_items": 18,
+    "candidate_strategy": "phrase_trajectory_bm25_v1",
+    "retrieval_mode": "graph",
+    "graph_radius": 1,
+    "candidate_vertex_ids": [
+      8102870490173997925,
+      4903995652722540026,
+      8344407657347728233
+    ],
+    "hydra_state_reads": 9,
+    "graph_neighbor_states": 6,
+    "context_ordering": "candidate-core-first"
+  },
+  "checks": {
+    "candidate_strategy_identity": true,
+    "graph_radius_identity": true,
+    "candidate_vertex_ids_equal": true,
+    "a2_mode_flat": true,
+    "a3_mode_graph": true,
+    "a2_zero_graph_neighbors": true,
+    "a3_positive_graph_neighbors": true,
+    "a2_positive_hydra_reads": true,
+    "a3_more_hydra_reads_than_a2": true,
+    "candidate_core_first": true
+  },
+  "integrity": {
+    "gold_answer_used_in_selection": false,
+    "question_type_used_in_selection": false,
+    "evaluator_metadata_used_in_selection": false,
+    "reader_invoked": false,
+    "same_seed_selector_a2_a3": true,
+    "live_hydra_state_reads_executed": true,
+    "live_hydra_graph_traversal_executed": true,
+    "frozen_selection_used_only_as_test_oracle": true
+  }
+}
