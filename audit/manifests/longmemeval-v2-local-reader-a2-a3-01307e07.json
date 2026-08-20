@@ -1,0 +1,95 @@
+{
+  "run_id": "longmemeval-v2-local-reader-a2-a3-01307e07",
+  "status": "TESTED",
+  "coverage": "SMOKE",
+  "n_examples": 1,
+  "git": {
+    "submission_commit_at_freeze": "2b550b1757876e31fabe84500fb175833bb745d2",
+    "hydradb_commit": "6a2fbb192f37f51a93690a2ae2d2f5e27e6e4219",
+    "longmemeval_v2_commit": "2cc8c540bdb87fe6761629b585e727e1c4704520"
+  },
+  "benchmark": {
+    "name": "LongMemEval-V2",
+    "domain": "enterprise",
+    "tier": "small",
+    "question_id": "01307e07",
+    "question_type": "dynamic-environment",
+    "dataset_filter": "official enterprise-small question 01307e07 with exact official 100-trajectory haystack",
+    "eval_function": "norm_phrase_set_match|lower=true|normalize_hyphen=true|strip_punct=true|separators=,;|require_non_empty=true"
+  },
+  "reader": {
+    "model": "engram-qwen2.5vl-3b",
+    "base_model": "qwen2.5vl:3b",
+    "runtime": "Ollama",
+    "endpoint": "http://127.0.0.1:11434/v1",
+    "quantization": "Q4_K_M",
+    "num_ctx": 16384,
+    "memory_context_max_tokens": 12000,
+    "max_completion_tokens": 256,
+    "temperature": 0,
+    "top_p": 1,
+    "canonical_longmemeval_v2_reader": false,
+    "paid_api_required": false,
+    "claim_scope": "controlled local-reader smoke only"
+  },
+  "hydradb": {
+    "repository": "hydra-db/hydradb",
+    "bolt_endpoint": "bolt://127.0.0.1:7687",
+    "database": "default",
+    "graph_namespace": "engram",
+    "graph_id": "engram-memory",
+    "cell_id": "cell-0",
+    "storage_backend": "local",
+    "storage_schema": "bounded-content-chunks-v2"
+  },
+  "a2": {
+    "mode": "hydra-flat",
+    "answer": "Incident - Incidents",
+    "score": 0.0,
+    "memory_query_seconds": 2.999142999004107,
+    "context_original_tokens": 9257,
+    "context_final_tokens": 9257,
+    "context_truncated": false,
+    "context_items": 6,
+    "prompt_tokens": 10160
+  },
+  "a3": {
+    "mode": "hydra-graph",
+    "answer": "Incidents",
+    "score": 0.0,
+    "memory_query_seconds": 3.1848816869969596,
+    "context_original_tokens": 27277,
+    "context_final_tokens": 11265,
+    "context_truncated": true,
+    "context_items": 7,
+    "prompt_tokens": 12142
+  },
+  "delta": {
+    "score": 0.0,
+    "memory_query_seconds": 0.18573868799285265,
+    "context_original_tokens": 18020,
+    "context_final_tokens": 2008,
+    "context_items": 1,
+    "image_items": 0
+  },
+  "verdict": "NO_SCORE_GAIN_BOTH_INCORRECT",
+  "claims": {
+    "graph_capability_delta": "TESTED",
+    "answer_quality_evaluated": "TESTED",
+    "answer_quality_gain": "NOT_OBSERVED",
+    "canonical_reader_score": "NOT_RUN"
+  },
+  "hardware": {
+    "platform": "Linux-6.17.0-1019-aws-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "execution": "AWS EC2 CPU-only local-reader smoke",
+    "swap_gib": 8
+  },
+  "notes": [
+    "A2 was not memory-context truncated.",
+    "A3 expanded from 9257 to 27277 original memory-context tokens.",
+    "A3 was prefix-truncated to 11265 tokens / 7 retained items.",
+    "The result must not be compared directly to canonical Qwen3.5-9B leaderboard scores.",
+    "No answer-quality advantage claim is permitted from this n=1 result."
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "status": "TESTED",
+  "coverage": "SMOKE",
+  "n_examples": 1,
+  "question_id": "01307e07",
+  "question_type": "dynamic-environment",
+  "category": "dynamic",
+  "reader": {
+    "model": "engram-qwen2.5vl-3b",
+    "base_model": "qwen2.5vl:3b",
+    "canonical_longmemeval_v2_reader": false,
+    "claim_scope": "controlled local-reader smoke only",
+    "memory_context_max_tokens": 12000,
+    "num_ctx": 16384,
+    "temperature": 0,
+    "top_p": 1
+  },
+  "gold": "Incident Mobile, Incident Portal, My Open Incidents",
+  "a2": {
+    "mode": "hydra-flat",
+    "answer": "Incident - Incidents",
+    "score": 0.0,
+    "score_bool": false,
+    "memory_query_seconds": 2.999142999004107,
+    "context_original_tokens": 9257,
+    "context_final_tokens": 9257,
+    "context_truncated": false,
+    "context_items": 6,
+    "text_items": 3,
+    "image_items": 3,
+    "prompt_tokens": 10160,
+    "completion_tokens": 10
+  },
+  "a3": {
+    "mode": "hydra-graph",
+    "answer": "Incidents",
+    "score": 0.0,
+    "score_bool": false,
+    "memory_query_seconds": 3.1848816869969596,
+    "context_original_tokens": 27277,
+    "context_final_tokens": 11265,
+    "context_truncated": true,
+    "context_items": 7,
+    "text_items": 4,
+    "image_items": 3,
+    "prompt_tokens": 12142,
+    "completion_tokens": 7
+  },
+  "delta": {
+    "score": 0.0,
+    "memory_query_seconds": 0.18573868799285265,
+    "context_original_tokens": 18020,
+    "context_final_tokens": 2008,
+    "context_items": 1,
+    "image_items": 0
+  },
+  "verdict": "NO_SCORE_GAIN_BOTH_INCORRECT"
+}

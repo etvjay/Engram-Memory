@@ -348,7 +348,7 @@ Applications demonstrate why the primitive matters. They do not redefine whether
 Hack Hydra Track 03 alignment       DEFINED
 Benchmark authority order           DEFINED
 LongMemEval baseline                DEFINED / NOT_RUN
-LongMemEval-V2 substrate            FULL MULTIMODAL VALIDATED / SCORE NOT_RUN
+LongMemEval-V2 substrate            FULL MULTIMODAL VALIDATED / LOCAL-READER SCORE SMOKE
 LongMemEval-V2 A3 smoke             TESTED / SMOKE / n_examples=1
 LongMemEval-V2 official question    TESTED / SMOKE / n_examples=1
 Official Small haystack isolation   TESTED / SMOKE / 100 trajectories
@@ -361,8 +361,9 @@ HydraDB Bolt retrieval              TESTED
 HydraDB benchmark graph integration TESTED / OFFICIAL-QUESTION SMOKE
 A2 vs A3 graph ablation             TESTED / OFFICIAL-QUESTION SMOKE / n_examples=1
 Graph capability advantage          TESTED / OFFICIAL-QUESTION SMOKE
-Benchmark answer quality            NOT_RUN
-Benchmark quality advantage         NOT_RUN
+A3 context-budget truncation        TESTED / SMOKE / 27277 -> 11265 tokens
+Benchmark answer quality            TESTED / SMOKE / n_examples=1 / A2=0 A3=0
+Benchmark quality advantage         NOT OBSERVED / SMOKE / n_examples=1
 Engram causal proof on Hydra        PROPOSED
 Temporal repair                     PROPOSED
 Submission repo eligibility         PASS — fresh repository
