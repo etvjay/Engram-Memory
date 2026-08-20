@@ -1,0 +1,18 @@
+{
+  "status": "PRISM11_104Q_SELECTOR_REPRODUCTION_PASS",
+  "n_questions": 104,
+  "exact_selection_matches": 104,
+  "trajectory_order_matches": 104,
+  "mismatch_count": 0,
+  "mismatches": [],
+  "integrity": {
+    "production_ranker_executed": true,
+    "official_haystack_used_per_question": true,
+    "gold_answer_used_in_selection": false,
+    "question_type_used_in_selection": false,
+    "evaluator_metadata_used_in_selection": false,
+    "reader_invoked": false,
+    "graph_traversal_executed": false,
+    "frozen_selection_used_only_as_test_oracle": true
+  }
+}

@@ -8,6 +8,8 @@
     "retrieval_mode": "graph",
     "candidate_top_k": 3,
     "include_images": true,
-    "max_state_chars": 6000
+    "max_state_chars": 6000,
+    "candidate_strategy": "phrase_trajectory_bm25_v1",
+    "graph_radius": 1
   }
 }

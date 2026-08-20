@@ -170,6 +170,10 @@ class EngramHydraMemory(Memory):
             memory_params.get("retrieval_mode", "graph")
         ).strip()
         self.candidate_top_k = int(memory_params.get("candidate_top_k", 3))
+        self.candidate_strategy = str(
+            memory_params.get("candidate_strategy", "legacy_tfidf")
+        ).strip().lower()
+        self.graph_radius = int(memory_params.get("graph_radius", 1))
         self.include_images = bool(memory_params.get("include_images", True))
         self.max_state_chars = int(memory_params.get("max_state_chars", 6000))
         self.chunk_byte_budget = int(
@@ -196,6 +200,21 @@ class EngramHydraMemory(Memory):
         require(
             self.candidate_top_k > 0,
             "engram_hydra candidate_top_k must be positive",
+        )
+        require(
+            self.candidate_strategy
+            in {"legacy_tfidf", "phrase_trajectory_bm25_v1"},
+            (
+                "engram_hydra candidate_strategy must be "
+                "legacy_tfidf or phrase_trajectory_bm25_v1"
+            ),
+        )
+        require(
+            self.graph_radius == 1,
+            (
+                "engram_hydra currently supports graph_radius=1; "
+                "wider radii are intentionally not enabled"
+            ),
         )
         require(
             self.max_state_chars > 0,
@@ -639,7 +658,14 @@ class EngramHydraMemory(Memory):
 
             self._ingested_fingerprints.add(prepared.fingerprint)
 
-    def _rank_candidates(self, query: str) -> list[StateRecord]:
+    def _rank_candidates_legacy(
+        self,
+        query: str,
+    ) -> list[StateRecord]:
+        """Original Engram Hydra TF-IDF selector.
+
+        Kept intact as a reproducible retrieval baseline.
+        """
         query_terms = _tokens(query)
         if not self._states or not query_terms:
             return []
@@ -686,7 +712,277 @@ class EngramHydraMemory(Memory):
             ),
             reverse=True,
         )
-        return [item[2] for item in scored[: self.candidate_top_k]]
+        return [
+            item[2]
+            for item in scored[: self.candidate_top_k]
+        ]
+
+    def _rank_candidates_phrase_trajectory(
+        self,
+        query: str,
+    ) -> list[StateRecord]:
+        """Phrase-aware trajectory-diverse retrieval.
+
+        This is the production promotion of the frozen LongMemEval-V2
+        phrase-diverse diagnostic.
+
+        Ranking inputs are limited to the runtime query and stored memory
+        state. Gold answers, question type, evidence labels, and evaluator
+        metadata are never consulted.
+        """
+        from collections import Counter, defaultdict
+        import math
+
+        if not self._states:
+            return []
+
+        # Match the frozen diagnostic exactly: benchmark answer-format
+        # instructions are not retrieval semantics.
+        marker = "\n\nMark your final answer"
+        retrieval_query = (
+            query.split(marker, 1)[0]
+            if marker in query
+            else query
+        )
+
+        query_tokens = _tokens(retrieval_query)
+        query_unique = set(query_tokens)
+
+        if not query_unique:
+            return []
+
+        def ngrams(
+            tokens: list[str],
+            n: int,
+        ) -> set[tuple[str, ...]]:
+            if len(tokens) < n:
+                return set()
+
+            return {
+                tuple(tokens[i:i + n])
+                for i in range(len(tokens) - n + 1)
+            }
+
+        states = list(self._states)
+        docs = [
+            _tokens(state.search_text)
+            for state in states
+        ]
+
+        n_docs = len(docs)
+
+        if n_docs == 0:
+            return []
+
+        avgdl = sum(len(doc) for doc in docs) / n_docs
+
+        term_df: Counter[str] = Counter()
+
+        query_bigrams = ngrams(query_tokens, 2)
+        query_trigrams = ngrams(query_tokens, 3)
+
+        matched_bigrams: list[set[tuple[str, ...]]] = []
+        matched_trigrams: list[set[tuple[str, ...]]] = []
+
+        for doc in docs:
+            term_df.update(set(doc))
+
+            matched_bigrams.append(
+                ngrams(doc, 2) & query_bigrams
+            )
+            matched_trigrams.append(
+                ngrams(doc, 3) & query_trigrams
+            )
+
+        bigram_df: Counter[tuple[str, ...]] = Counter()
+        trigram_df: Counter[tuple[str, ...]] = Counter()
+
+        for bis, tris in zip(
+            matched_bigrams,
+            matched_trigrams,
+        ):
+            bigram_df.update(bis)
+            trigram_df.update(tris)
+
+        def bm25(
+            tokens: list[str],
+            k1: float = 1.5,
+            b: float = 0.75,
+        ) -> float:
+            counts = Counter(tokens)
+            dl = len(tokens)
+            score = 0.0
+
+            for term in query_unique:
+                tf = counts.get(term, 0)
+
+                if not tf:
+                    continue
+
+                df = term_df[term]
+
+                idf = math.log(
+                    1.0
+                    + (n_docs - df + 0.5)
+                    / (df + 0.5)
+                )
+
+                denom = (
+                    tf
+                    + k1
+                    * (
+                        1.0
+                        - b
+                        + b * dl / avgdl
+                    )
+                )
+
+                score += (
+                    idf
+                    * tf
+                    * (k1 + 1.0)
+                    / denom
+                )
+
+            return score
+
+        def phrase_idf(
+            bis: set[tuple[str, ...]],
+            tris: set[tuple[str, ...]],
+        ) -> float:
+            score = 0.0
+
+            # Frozen diagnostic deliberately used the same untuned IDF
+            # rule for bigrams and trigrams.
+            for gram in bis:
+                score += (
+                    math.log(
+                        (n_docs + 1)
+                        / (bigram_df[gram] + 1)
+                    )
+                    + 1.0
+                )
+
+            for gram in tris:
+                score += (
+                    math.log(
+                        (n_docs + 1)
+                        / (trigram_df[gram] + 1)
+                    )
+                    + 1.0
+                )
+
+            return score
+
+        rows: list[
+            tuple[
+                StateRecord,
+                float,
+                int,
+                int,
+                float,
+            ]
+        ] = []
+
+        for state, doc, bis, tris in zip(
+            states,
+            docs,
+            matched_bigrams,
+            matched_trigrams,
+        ):
+            rows.append(
+                (
+                    state,
+                    phrase_idf(bis, tris),
+                    len(tris),
+                    len(bis),
+                    bm25(doc),
+                )
+            )
+
+        def phrase_key(
+            row: tuple[
+                StateRecord,
+                float,
+                int,
+                int,
+                float,
+            ],
+        ) -> tuple[float, int, int, float, int, str]:
+            state, phrase_score, tri_count, bi_count, bm25_score = row
+
+            return (
+                phrase_score,
+                tri_count,
+                bi_count,
+                bm25_score,
+                -state.state_index,
+                state.trajectory_id,
+            )
+
+        ranked = sorted(
+            rows,
+            key=phrase_key,
+            reverse=True,
+        )
+
+        # Exact frozen diversity policy:
+        # best state from each trajectory under phrase_key,
+        # representatives ranked under phrase_key,
+        # then top candidate_top_k trajectories.
+        grouped: defaultdict[
+            str,
+            list[
+                tuple[
+                    StateRecord,
+                    float,
+                    int,
+                    int,
+                    float,
+                ]
+            ],
+        ] = defaultdict(list)
+
+        for row in ranked:
+            grouped[row[0].trajectory_id].append(row)
+
+        best = [
+            max(
+                trajectory_rows,
+                key=phrase_key,
+            )
+            for trajectory_rows in grouped.values()
+        ]
+
+        best.sort(
+            key=phrase_key,
+            reverse=True,
+        )
+
+        return [
+            row[0]
+            for row in best[: self.candidate_top_k]
+        ]
+
+    def _rank_candidates(
+        self,
+        query: str,
+    ) -> list[StateRecord]:
+        if self.candidate_strategy == "legacy_tfidf":
+            return self._rank_candidates_legacy(query)
+
+        if (
+            self.candidate_strategy
+            == "phrase_trajectory_bm25_v1"
+        ):
+            return self._rank_candidates_phrase_trajectory(
+                query
+            )
+
+        raise AssertionError(
+            "unreachable candidate strategy: "
+            f"{self.candidate_strategy}"
+        )
 
     @staticmethod
     def _state_projection(alias: str) -> str:
@@ -1019,6 +1315,8 @@ class EngramHydraMemory(Memory):
 
         self._last_query_debug = {
             "retrieval_mode": self.retrieval_mode,
+            "candidate_strategy": self.candidate_strategy,
+            "graph_radius": self.graph_radius,
             "context_ordering": "candidate-core-first",
             "candidate_count": len(candidates),
             "candidate_vertex_ids": [

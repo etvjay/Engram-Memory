@@ -389,6 +389,13 @@ Phrase diverse radius-5 recoverable   83/104 = 79.81%
 Phrase diverse trajectory upper bound 87/104 = 83.65%
 A3 production graph radius            DECIDED / radius=1
 A3 production seed policy             DECIDED / phrase-aware trajectory-diverse
+A3 production retriever               IMPLEMENTED / TESTED / phrase-diverse + radius=1
+A3 selector frozen reproduction        PASS / exact selections 104/104 / mismatches=0
+A2/A3 selector control                 PASS / identical top-3 seeds
+A2 live Hydra exact-state path         PASS / reads=3 / graph-neighbors=0
+A3 live Hydra radius-1 path            PASS / reads=9 / graph-neighbors=6
+A3 live candidate vertex parity        PASS / A2=A3 / n=3
+A3 context ordering                    PASS / candidate-core-first
 Hydra multi-question graph replay    REQUIRED / NOT_RUN
 Benchmark answer quality            TESTED / SMOKE / n_examples=1 / A2=0 A3=0
 Benchmark quality advantage         NOT OBSERVED / SMOKE / n_examples=1
