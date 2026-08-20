@@ -1,0 +1,259 @@
+{
+  "status": "PRISM12_MECHANISM_SUBSET_FROZEN",
+  "selection_policy": {
+    "purpose": "mechanism validation, not unbiased benchmark estimation",
+    "ordering": "lexicographic question_id within frozen diagnostic strata",
+    "exact_seed": "first 4 phrase-diverse exact-seed hits",
+    "graph1_only": "all radius0=false/radius1=true questions",
+    "unrecovered_r1": "first 4 radius1=false questions"
+  },
+  "n_questions": 12,
+  "questions": [
+    {
+      "stratum": "exact_seed",
+      "question_id": "01307e07",
+      "expected_selection": [
+        {
+          "trajectory_id": "1d56a4d6",
+          "state_index": 11
+        },
+        {
+          "trajectory_id": "9c420e86",
+          "state_index": 68
+        },
+        {
+          "trajectory_id": "fa42acc1",
+          "state_index": 3
+        }
+      ],
+      "posthoc_radius0": true,
+      "posthoc_radius1": true
+    },
+    {
+      "stratum": "exact_seed",
+      "question_id": "057a2d4d",
+      "expected_selection": [
+        {
+          "trajectory_id": "787ceaeb",
+          "state_index": 11
+        },
+        {
+          "trajectory_id": "cfd9c5e9",
+          "state_index": 4
+        },
+        {
+          "trajectory_id": "96131e7b",
+          "state_index": 3
+        }
+      ],
+      "posthoc_radius0": true,
+      "posthoc_radius1": true
+    },
+    {
+      "stratum": "exact_seed",
+      "question_id": "080b0218",
+      "expected_selection": [
+        {
+          "trajectory_id": "787ceaeb",
+          "state_index": 11
+        },
+        {
+          "trajectory_id": "cfd9c5e9",
+          "state_index": 4
+        },
+        {
+          "trajectory_id": "96131e7b",
+          "state_index": 3
+        }
+      ],
+      "posthoc_radius0": true,
+      "posthoc_radius1": true
+    },
+    {
+      "stratum": "exact_seed",
+      "question_id": "0f8c85a6",
+      "expected_selection": [
+        {
+          "trajectory_id": "435237ce",
+          "state_index": 27
+        },
+        {
+          "trajectory_id": "1046053f",
+          "state_index": 31
+        },
+        {
+          "trajectory_id": "3fafa5c3",
+          "state_index": 48
+        }
+      ],
+      "posthoc_radius0": true,
+      "posthoc_radius1": true
+    },
+    {
+      "stratum": "graph1_only",
+      "question_id": "0cf979c4",
+      "expected_selection": [
+        {
+          "trajectory_id": "2083b6e5",
+          "state_index": 2
+        },
+        {
+          "trajectory_id": "3c588c61",
+          "state_index": 31
+        },
+        {
+          "trajectory_id": "91870469",
+          "state_index": 39
+        }
+      ],
+      "posthoc_radius0": false,
+      "posthoc_radius1": true
+    },
+    {
+      "stratum": "graph1_only",
+      "question_id": "901b7d17",
+      "expected_selection": [
+        {
+          "trajectory_id": "cfd9c5e9",
+          "state_index": 3
+        },
+        {
+          "trajectory_id": "013696c4",
+          "state_index": 1
+        },
+        {
+          "trajectory_id": "435237ce",
+          "state_index": 2
+        }
+      ],
+      "posthoc_radius0": false,
+      "posthoc_radius1": true
+    },
+    {
+      "stratum": "graph1_only",
+      "question_id": "a7edfb7a",
+      "expected_selection": [
+        {
+          "trajectory_id": "cfd9c5e9",
+          "state_index": 4
+        },
+        {
+          "trajectory_id": "96131e7b",
+          "state_index": 16
+        },
+        {
+          "trajectory_id": "afa62eac",
+          "state_index": 41
+        }
+      ],
+      "posthoc_radius0": false,
+      "posthoc_radius1": true
+    },
+    {
+      "stratum": "graph1_only",
+      "question_id": "b7cc4da2",
+      "expected_selection": [
+        {
+          "trajectory_id": "1a755059",
+          "state_index": 0
+        },
+        {
+          "trajectory_id": "3c588c61",
+          "state_index": 2
+        },
+        {
+          "trajectory_id": "4919aae9",
+          "state_index": 59
+        }
+      ],
+      "posthoc_radius0": false,
+      "posthoc_radius1": true
+    },
+    {
+      "stratum": "unrecovered_r1",
+      "question_id": "025db8ef",
+      "expected_selection": [
+        {
+          "trajectory_id": "96131e7b",
+          "state_index": 3
+        },
+        {
+          "trajectory_id": "fa42acc1",
+          "state_index": 3
+        },
+        {
+          "trajectory_id": "6a84271c",
+          "state_index": 4
+        }
+      ],
+      "posthoc_radius0": false,
+      "posthoc_radius1": false
+    },
+    {
+      "stratum": "unrecovered_r1",
+      "question_id": "0d07143c",
+      "expected_selection": [
+        {
+          "trajectory_id": "02dad10c",
+          "state_index": 11
+        },
+        {
+          "trajectory_id": "1046053f",
+          "state_index": 31
+        },
+        {
+          "trajectory_id": "36041ba0",
+          "state_index": 2
+        }
+      ],
+      "posthoc_radius0": false,
+      "posthoc_radius1": false
+    },
+    {
+      "stratum": "unrecovered_r1",
+      "question_id": "106c321b",
+      "expected_selection": [
+        {
+          "trajectory_id": "91870469",
+          "state_index": 30
+        },
+        {
+          "trajectory_id": "cfd9c5e9",
+          "state_index": 4
+        },
+        {
+          "trajectory_id": "1a755059",
+          "state_index": 43
+        }
+      ],
+      "posthoc_radius0": false,
+      "posthoc_radius1": false
+    },
+    {
+      "stratum": "unrecovered_r1",
+      "question_id": "229675cd",
+      "expected_selection": [
+        {
+          "trajectory_id": "dc083cd0",
+          "state_index": 33
+        },
+        {
+          "trajectory_id": "afa62eac",
+          "state_index": 15
+        },
+        {
+          "trajectory_id": "6dedfb73",
+          "state_index": 41
+        }
+      ],
+      "posthoc_radius0": false,
+      "posthoc_radius1": false
+    }
+  ],
+  "integrity": {
+    "gold_used_for_subset_stratification": true,
+    "gold_used_in_runtime_selection": false,
+    "subset_is_unbiased_benchmark_sample": false,
+    "allowed_claim": "live mechanism replay over deterministic diagnostic strata"
+  }
+}
