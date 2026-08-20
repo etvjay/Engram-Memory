@@ -1,0 +1,6 @@
+FROM qwen2.5vl:3b
+
+PARAMETER num_ctx 16384
+PARAMETER temperature 0
+PARAMETER top_p 1
+PARAMETER top_k 1

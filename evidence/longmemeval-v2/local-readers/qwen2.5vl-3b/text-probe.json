@@ -1,0 +1,1 @@
+{"id":"chatcmpl-417","object":"chat.completion","created":1787212271,"model":"engram-qwen2.5vl-3b","system_fingerprint":"fp_ollama","choices":[{"index":0,"message":{"role":"assistant","content":"LOCAL_READER_PASS"},"finish_reason":"stop"}],"usage":{"prompt_tokens":26,"completion_tokens":5,"total_tokens":31}}

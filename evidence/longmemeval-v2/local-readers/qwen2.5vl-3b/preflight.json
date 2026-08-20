@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "purpose": "local multimodal reader for controlled LongMemEval-V2 A2/A3 smoke",
+  "model": "engram-qwen2.5vl-3b",
+  "base_model": "qwen2.5vl:3b",
+  "endpoint": "http://127.0.0.1:11434/v1",
+  "quantization": "Q4_K_M",
+  "num_ctx": 16384,
+  "temperature": 0,
+  "top_p": 1,
+  "top_k": 1,
+  "text_probe": "PASS",
+  "multimodal_image_url_probe": "PASS",
+  "paid_api_required": false,
+  "canonical_longmemeval_v2_reader": false,
+  "claim_scope": "controlled local-reader smoke only"
+}

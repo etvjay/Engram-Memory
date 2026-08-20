@@ -1,0 +1,2 @@
+NAME      TYPE SIZE USED PRIO
+/swapfile file   8G 248M   -2

@@ -1,0 +1,25 @@
+  Model
+    architecture        qwen25vl    
+    parameters          3.8B        
+    context length      128000      
+    embedding length    2048        
+    quantization        Q4_K_M      
+
+  Capabilities
+    completion    
+    vision        
+
+  Parameters
+    num_ctx        16384    
+    temperature    0        
+    top_k          1        
+    top_p          1        
+
+  System
+    You are a helpful assistant.    
+
+  License
+    Apache License               
+    Version 2.0, January 2004    
+    ...                          
+
