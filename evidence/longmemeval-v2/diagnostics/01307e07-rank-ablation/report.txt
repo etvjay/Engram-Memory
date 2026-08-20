@@ -1,0 +1,59 @@
+INGEST_PROGRESS=1/100
+INGEST_PROGRESS=10/100
+INGEST_PROGRESS=20/100
+INGEST_PROGRESS=30/100
+INGEST_PROGRESS=40/100
+INGEST_PROGRESS=50/100
+INGEST_PROGRESS=60/100
+INGEST_PROGRESS=70/100
+INGEST_PROGRESS=80/100
+INGEST_PROGRESS=90/100
+INGEST_PROGRESS=100/100
+STATE_COUNT=3358
+
+========================================================================
+current_all_fields_raw_query
+========================================================================
+TARGET_RANK=128 TARGET_SCORE=107.861989
+TOP3=[('4db02b16', 4, 166.399647), ('25a8b10b', 5, 166.106611), ('933a1321', 8, 165.386051)]
+TARGET_TOP_TERMS=[('filters', 20.853905, 6, 2), ('the', 9.299031, 8, 3), ('incidents', 7.184236, 14, 1), ('personal', 6.502288, 3, 1), ('option', 5.241079, 31, 1), ('incident', 5.022326, 3, 1), ('open', 4.872942, 45, 1), ('short', 4.492564, 7, 1), ('when', 4.001405, 1, 1), ('filter', 3.780612, 8, 1), ('portal', 3.488187, 1, 1), ('list', 3.470487, 11, 1)]
+
+========================================================================
+all_fields_stripped_footer
+========================================================================
+TARGET_RANK=45 TARGET_SCORE=92.852614
+TOP3=[('96131e7b', 22, 136.262153), ('96131e7b', 16, 135.909352), ('96131e7b', 3, 135.122449)]
+TARGET_TOP_TERMS=[('filters', 20.853905, 6, 2), ('the', 9.299031, 8, 3), ('incidents', 7.184236, 14, 1), ('personal', 6.502288, 3, 1), ('option', 5.241079, 31, 1), ('incident', 5.022326, 3, 1), ('open', 4.872942, 45, 1), ('when', 4.001405, 1, 1), ('filter', 3.780612, 8, 1), ('portal', 3.488187, 1, 1), ('list', 3.470487, 11, 1), ('on', 3.317931, 6, 1)]
+
+========================================================================
+state_local_raw_query
+========================================================================
+TARGET_RANK=151 TARGET_SCORE=104.939059
+TOP3=[('4db02b16', 4, 174.58562), ('25a8b10b', 5, 174.020802), ('933a1321', 8, 173.300772)]
+TARGET_TOP_TERMS=[('filters', 20.879576, 6, 2), ('the', 7.969411, 5, 3), ('incidents', 7.661974, 14, 1), ('personal', 6.88084, 3, 1), ('option', 5.241079, 31, 1), ('open', 4.872942, 45, 1), ('when', 4.700558, 1, 1), ('short', 4.510249, 6, 1), ('incident', 4.284462, 2, 1), ('portal', 3.53215, 1, 1), ('filter', 3.500383, 6, 1), ('list', 3.316498, 9, 1)]
+
+========================================================================
+state_local_stripped_footer
+========================================================================
+TARGET_RANK=53 TARGET_SCORE=91.160376
+TOP3=[('4db02b16', 4, 133.335484), ('25a8b10b', 5, 132.770666), ('933a1321', 8, 132.050635)]
+TARGET_TOP_TERMS=[('filters', 20.879576, 6, 2), ('the', 7.969411, 5, 3), ('incidents', 7.661974, 14, 1), ('personal', 6.88084, 3, 1), ('option', 5.241079, 31, 1), ('open', 4.872942, 45, 1), ('when', 4.700558, 1, 1), ('incident', 4.284462, 2, 1), ('portal', 3.53215, 1, 1), ('filter', 3.500383, 6, 1), ('list', 3.316498, 9, 1), ('edit', 3.273523, 4, 1)]
+
+========================================================================
+EXACT REPRODUCTION
+========================================================================
+CURRENT_TOP3=[('4db02b16', 4), ('25a8b10b', 5), ('933a1321', 8)]
+FROZEN_TOP3=[('4db02b16', 4), ('25a8b10b', 5), ('933a1321', 8)]
+CURRENT_RANKER_REPRODUCTION=PASS
+
+========================================================================
+TARGET FIELD MATCHES
+========================================================================
+goal: count=8 terms=['and', 'filter', 'incident', 'list', 'mark', 'on', 'short', 'the']
+outcome: count=0 terms=[]
+url: count=0 terms=[]
+action: count=0 terms=[]
+thoughts: count=8 terms=['and', 'edit', 'filter', 'filters', 'list', 'open', 'personal', 'the']
+text: count=22 terms=['edit', 'filter', 'filters', 'in', 'incident', 'incidents', 'list', 'more', 'none', 'on', 'one', 'open', 'option', 'or', 'page', 'personal', 'portal', 'servicenow', 'short', 'the', 'when', 'with']
+
+POSTHOC_RANK_ABLATION=PASS

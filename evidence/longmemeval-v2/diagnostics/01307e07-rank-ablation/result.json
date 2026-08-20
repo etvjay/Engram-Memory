@@ -1,0 +1,798 @@
+{
+  "status": "POSTHOC_RANKING_DIAGNOSTIC",
+  "question_id": "01307e07",
+  "target_ref": {
+    "trajectory_id": "1d56a4d6",
+    "state_index": 11
+  },
+  "current_ranker_reproduced": true,
+  "frozen_top3": [
+    {
+      "trajectory_id": "4db02b16",
+      "state_index": 4
+    },
+    {
+      "trajectory_id": "25a8b10b",
+      "state_index": 5
+    },
+    {
+      "trajectory_id": "933a1321",
+      "state_index": 8
+    }
+  ],
+  "modes": {
+    "current_all_fields_raw_query": {
+      "field_mode": "all-fields",
+      "query_footer_stripped": false,
+      "target_rank": 128,
+      "target_score": 107.86198903957258,
+      "target_top_contributions": [
+        {
+          "term": "filters",
+          "tf": 6,
+          "query_tf": 2,
+          "idf": 3.734903526823204,
+          "contribution": 20.853904575323877
+        },
+        {
+          "term": "the",
+          "tf": 8,
+          "query_tf": 3,
+          "idf": 1.0065711108609188,
+          "contribution": 9.299030680319797
+        },
+        {
+          "term": "incidents",
+          "tf": 14,
+          "query_tf": 1,
+          "idf": 1.9742024546151216,
+          "contribution": 7.184235912611593
+        },
+        {
+          "term": "personal",
+          "tf": 3,
+          "query_tf": 1,
+          "idf": 3.0983752402627665,
+          "contribution": 6.5022883541204495
+        },
+        {
+          "term": "option",
+          "tf": 31,
+          "query_tf": 1,
+          "idf": 1.1820238934489975,
+          "contribution": 5.241078818948568
+        },
+        {
+          "term": "incident",
+          "tf": 3,
+          "query_tf": 1,
+          "idf": 2.3931651872535458,
+          "contribution": 5.02232587078301
+        },
+        {
+          "term": "open",
+          "tf": 45,
+          "query_tf": 1,
+          "idf": 1.0137891873123968,
+          "contribution": 4.872942459189234
+        },
+        {
+          "term": "short",
+          "tf": 7,
+          "query_tf": 1,
+          "idf": 1.525017347060476,
+          "contribution": 4.492564080190865
+        },
+        {
+          "term": "when",
+          "tf": 1,
+          "query_tf": 1,
+          "idf": 4.001404777195537,
+          "contribution": 4.001404777195537
+        },
+        {
+          "term": "filter",
+          "tf": 8,
+          "query_tf": 1,
+          "idf": 1.2276939302821859,
+          "contribution": 3.780611689379151
+        },
+        {
+          "term": "portal",
+          "tf": 1,
+          "query_tf": 1,
+          "idf": 3.4881868077909273,
+          "contribution": 3.4881868077909273
+        },
+        {
+          "term": "list",
+          "tf": 11,
+          "query_tf": 1,
+          "idf": 1.0213638334362223,
+          "contribution": 3.4704873414401622
+        },
+        {
+          "term": "on",
+          "tf": 6,
+          "query_tf": 1,
+          "idf": 1.1884732171289045,
+          "contribution": 3.317931357843549
+        },
+        {
+          "term": "edit",
+          "tf": 4,
+          "query_tf": 1,
+          "idf": 1.369214427354456,
+          "contribution": 3.2673486671599385
+        },
+        {
+          "term": "page",
+          "tf": 9,
+          "query_tf": 1,
+          "idf": 1.0183270864927485,
+          "contribution": 3.255820388701802
+        }
+      ],
+      "top10": [
+        {
+          "rank": 1,
+          "trajectory_id": "4db02b16",
+          "state_index": 4,
+          "score": 166.39964670257385
+        },
+        {
+          "rank": 2,
+          "trajectory_id": "25a8b10b",
+          "state_index": 5,
+          "score": 166.106610724147
+        },
+        {
+          "rank": 3,
+          "trajectory_id": "933a1321",
+          "state_index": 8,
+          "score": 165.3860510364314
+        },
+        {
+          "rank": 4,
+          "trajectory_id": "96131e7b",
+          "state_index": 22,
+          "score": 162.53710274503285
+        },
+        {
+          "rank": 5,
+          "trajectory_id": "96131e7b",
+          "state_index": 16,
+          "score": 162.18430151360326
+        },
+        {
+          "rank": 6,
+          "trajectory_id": "96131e7b",
+          "state_index": 3,
+          "score": 161.39739839691458
+        },
+        {
+          "rank": 7,
+          "trajectory_id": "96131e7b",
+          "state_index": 10,
+          "score": 161.0875106745947
+        },
+        {
+          "rank": 8,
+          "trajectory_id": "6a84271c",
+          "state_index": 4,
+          "score": 153.13913094373908
+        },
+        {
+          "rank": 9,
+          "trajectory_id": "38b757f1",
+          "state_index": 4,
+          "score": 151.66360291898255
+        },
+        {
+          "rank": 10,
+          "trajectory_id": "fa42acc1",
+          "state_index": 3,
+          "score": 151.6314924831297
+        }
+      ]
+    },
+    "all_fields_stripped_footer": {
+      "field_mode": "all-fields",
+      "query_footer_stripped": true,
+      "target_rank": 45,
+      "target_score": 92.85261376647203,
+      "target_top_contributions": [
+        {
+          "term": "filters",
+          "tf": 6,
+          "query_tf": 2,
+          "idf": 3.734903526823204,
+          "contribution": 20.853904575323877
+        },
+        {
+          "term": "the",
+          "tf": 8,
+          "query_tf": 3,
+          "idf": 1.0065711108609188,
+          "contribution": 9.299030680319797
+        },
+        {
+          "term": "incidents",
+          "tf": 14,
+          "query_tf": 1,
+          "idf": 1.9742024546151216,
+          "contribution": 7.184235912611593
+        },
+        {
+          "term": "personal",
+          "tf": 3,
+          "query_tf": 1,
+          "idf": 3.0983752402627665,
+          "contribution": 6.5022883541204495
+        },
+        {
+          "term": "option",
+          "tf": 31,
+          "query_tf": 1,
+          "idf": 1.1820238934489975,
+          "contribution": 5.241078818948568
+        },
+        {
+          "term": "incident",
+          "tf": 3,
+          "query_tf": 1,
+          "idf": 2.3931651872535458,
+          "contribution": 5.02232587078301
+        },
+        {
+          "term": "open",
+          "tf": 45,
+          "query_tf": 1,
+          "idf": 1.0137891873123968,
+          "contribution": 4.872942459189234
+        },
+        {
+          "term": "when",
+          "tf": 1,
+          "query_tf": 1,
+          "idf": 4.001404777195537,
+          "contribution": 4.001404777195537
+        },
+        {
+          "term": "filter",
+          "tf": 8,
+          "query_tf": 1,
+          "idf": 1.2276939302821859,
+          "contribution": 3.780611689379151
+        },
+        {
+          "term": "portal",
+          "tf": 1,
+          "query_tf": 1,
+          "idf": 3.4881868077909273,
+          "contribution": 3.4881868077909273
+        },
+        {
+          "term": "list",
+          "tf": 11,
+          "query_tf": 1,
+          "idf": 1.0213638334362223,
+          "contribution": 3.4704873414401622
+        },
+        {
+          "term": "on",
+          "tf": 6,
+          "query_tf": 1,
+          "idf": 1.1884732171289045,
+          "contribution": 3.317931357843549
+        },
+        {
+          "term": "edit",
+          "tf": 4,
+          "query_tf": 1,
+          "idf": 1.369214427354456,
+          "contribution": 3.2673486671599385
+        },
+        {
+          "term": "page",
+          "tf": 9,
+          "query_tf": 1,
+          "idf": 1.0183270864927485,
+          "contribution": 3.255820388701802
+        },
+        {
+          "term": "and",
+          "tf": 5,
+          "query_tf": 1,
+          "idf": 1.1650263170804265,
+          "contribution": 3.0400638407731364
+        }
+      ],
+      "top10": [
+        {
+          "rank": 1,
+          "trajectory_id": "96131e7b",
+          "state_index": 22,
+          "score": 136.26215293682966
+        },
+        {
+          "rank": 2,
+          "trajectory_id": "96131e7b",
+          "state_index": 16,
+          "score": 135.90935170540007
+        },
+        {
+          "rank": 3,
+          "trajectory_id": "96131e7b",
+          "state_index": 3,
+          "score": 135.1224485887114
+        },
+        {
+          "rank": 4,
+          "trajectory_id": "96131e7b",
+          "state_index": 10,
+          "score": 134.81256086639152
+        },
+        {
+          "rank": 5,
+          "trajectory_id": "4db02b16",
+          "state_index": 4,
+          "score": 131.3153572657334
+        },
+        {
+          "rank": 6,
+          "trajectory_id": "25a8b10b",
+          "state_index": 5,
+          "score": 130.94240863281644
+        },
+        {
+          "rank": 7,
+          "trajectory_id": "933a1321",
+          "state_index": 8,
+          "score": 130.22184894510085
+        },
+        {
+          "rank": 8,
+          "trajectory_id": "6a84271c",
+          "state_index": 4,
+          "score": 126.89461967901333
+        },
+        {
+          "rank": 9,
+          "trajectory_id": "fa42acc1",
+          "state_index": 3,
+          "score": 124.14522937217168
+        },
+        {
+          "rank": 10,
+          "trajectory_id": "38b757f1",
+          "state_index": 3,
+          "score": 120.38389156727209
+        }
+      ]
+    },
+    "state_local_raw_query": {
+      "field_mode": "state-local",
+      "query_footer_stripped": false,
+      "target_rank": 151,
+      "target_score": 104.93905938735774,
+      "target_top_contributions": [
+        {
+          "term": "filters",
+          "tf": 6,
+          "query_tf": 2,
+          "idf": 3.7395012360718334,
+          "contribution": 20.879575971987116
+        },
+        {
+          "term": "the",
+          "tf": 5,
+          "query_tf": 3,
+          "idf": 1.0180239183837112,
+          "contribution": 7.969410625185524
+        },
+        {
+          "term": "incidents",
+          "tf": 14,
+          "query_tf": 1,
+          "idf": 2.105483114801765,
+          "contribution": 7.661973761300527
+        },
+        {
+          "term": "personal",
+          "tf": 3,
+          "query_tf": 1,
+          "idf": 3.2787569322388945,
+          "contribution": 6.880839589552298
+        },
+        {
+          "term": "option",
+          "tf": 31,
+          "query_tf": 1,
+          "idf": 1.1820238934489975,
+          "contribution": 5.241078818948568
+        },
+        {
+          "term": "open",
+          "tf": 45,
+          "query_tf": 1,
+          "idf": 1.0137891873123968,
+          "contribution": 4.872942459189234
+        },
+        {
+          "term": "when",
+          "tf": 1,
+          "query_tf": 1,
+          "idf": 4.700557981815695,
+          "contribution": 4.700557981815695
+        },
+        {
+          "term": "short",
+          "tf": 6,
+          "query_tf": 1,
+          "idf": 1.6155578429133417,
+          "contribution": 4.5102489060389725
+        },
+        {
+          "term": "incident",
+          "tf": 2,
+          "query_tf": 1,
+          "idf": 2.5304721120787734,
+          "contribution": 4.284461722051746
+        },
+        {
+          "term": "portal",
+          "tf": 1,
+          "query_tf": 1,
+          "idf": 3.5321499312120435,
+          "contribution": 3.5321499312120435
+        },
+        {
+          "term": "filter",
+          "tf": 6,
+          "query_tf": 1,
+          "idf": 1.2538268319275023,
+          "contribution": 3.5003829308058174
+        },
+        {
+          "term": "list",
+          "tf": 9,
+          "query_tf": 1,
+          "idf": 1.0373053114339106,
+          "contribution": 3.3164980359179004
+        },
+        {
+          "term": "edit",
+          "tf": 4,
+          "query_tf": 1,
+          "idf": 1.371801750919407,
+          "contribution": 3.2735227827933735
+        },
+        {
+          "term": "page",
+          "tf": 9,
+          "query_tf": 1,
+          "idf": 1.0183270864927485,
+          "contribution": 3.255820388701802
+        },
+        {
+          "term": "on",
+          "tf": 5,
+          "query_tf": 1,
+          "idf": 1.2284418734733737,
+          "contribution": 3.205542797862996
+        }
+      ],
+      "top10": [
+        {
+          "rank": 1,
+          "trajectory_id": "4db02b16",
+          "state_index": 4,
+          "score": 174.5856198181885
+        },
+        {
+          "rank": 2,
+          "trajectory_id": "25a8b10b",
+          "state_index": 5,
+          "score": 174.0208021641369
+        },
+        {
+          "rank": 3,
+          "trajectory_id": "933a1321",
+          "state_index": 8,
+          "score": 173.30077151504202
+        },
+        {
+          "rank": 4,
+          "trajectory_id": "38b757f1",
+          "state_index": 4,
+          "score": 161.03030143239434
+        },
+        {
+          "rank": 5,
+          "trajectory_id": "fa42acc1",
+          "state_index": 3,
+          "score": 157.65451282231172
+        },
+        {
+          "rank": 6,
+          "trajectory_id": "38b757f1",
+          "state_index": 3,
+          "score": 156.78795076700268
+        },
+        {
+          "rank": 7,
+          "trajectory_id": "6a84271c",
+          "state_index": 4,
+          "score": 155.98454154414344
+        },
+        {
+          "rank": 8,
+          "trajectory_id": "96131e7b",
+          "state_index": 22,
+          "score": 155.60082766996726
+        },
+        {
+          "rank": 9,
+          "trajectory_id": "96131e7b",
+          "state_index": 16,
+          "score": 155.2062253261671
+        },
+        {
+          "rank": 10,
+          "trajectory_id": "96131e7b",
+          "state_index": 3,
+          "score": 154.3763231142479
+        }
+      ]
+    },
+    "state_local_stripped_footer": {
+      "field_mode": "state-local",
+      "query_footer_stripped": true,
+      "target_rank": 53,
+      "target_score": 91.1603758719313,
+      "target_top_contributions": [
+        {
+          "term": "filters",
+          "tf": 6,
+          "query_tf": 2,
+          "idf": 3.7395012360718334,
+          "contribution": 20.879575971987116
+        },
+        {
+          "term": "the",
+          "tf": 5,
+          "query_tf": 3,
+          "idf": 1.0180239183837112,
+          "contribution": 7.969410625185524
+        },
+        {
+          "term": "incidents",
+          "tf": 14,
+          "query_tf": 1,
+          "idf": 2.105483114801765,
+          "contribution": 7.661973761300527
+        },
+        {
+          "term": "personal",
+          "tf": 3,
+          "query_tf": 1,
+          "idf": 3.2787569322388945,
+          "contribution": 6.880839589552298
+        },
+        {
+          "term": "option",
+          "tf": 31,
+          "query_tf": 1,
+          "idf": 1.1820238934489975,
+          "contribution": 5.241078818948568
+        },
+        {
+          "term": "open",
+          "tf": 45,
+          "query_tf": 1,
+          "idf": 1.0137891873123968,
+          "contribution": 4.872942459189234
+        },
+        {
+          "term": "when",
+          "tf": 1,
+          "query_tf": 1,
+          "idf": 4.700557981815695,
+          "contribution": 4.700557981815695
+        },
+        {
+          "term": "incident",
+          "tf": 2,
+          "query_tf": 1,
+          "idf": 2.5304721120787734,
+          "contribution": 4.284461722051746
+        },
+        {
+          "term": "portal",
+          "tf": 1,
+          "query_tf": 1,
+          "idf": 3.5321499312120435,
+          "contribution": 3.5321499312120435
+        },
+        {
+          "term": "filter",
+          "tf": 6,
+          "query_tf": 1,
+          "idf": 1.2538268319275023,
+          "contribution": 3.5003829308058174
+        },
+        {
+          "term": "list",
+          "tf": 9,
+          "query_tf": 1,
+          "idf": 1.0373053114339106,
+          "contribution": 3.3164980359179004
+        },
+        {
+          "term": "edit",
+          "tf": 4,
+          "query_tf": 1,
+          "idf": 1.371801750919407,
+          "contribution": 3.2735227827933735
+        },
+        {
+          "term": "page",
+          "tf": 9,
+          "query_tf": 1,
+          "idf": 1.0183270864927485,
+          "contribution": 3.255820388701802
+        },
+        {
+          "term": "on",
+          "tf": 5,
+          "query_tf": 1,
+          "idf": 1.2284418734733737,
+          "contribution": 3.205542797862996
+        },
+        {
+          "term": "servicenow",
+          "tf": 4,
+          "query_tf": 1,
+          "idf": 1.012281118861903,
+          "contribution": 2.415600725808293
+        }
+      ],
+      "top10": [
+        {
+          "rank": 1,
+          "trajectory_id": "4db02b16",
+          "state_index": 4,
+          "score": 133.33548363899368
+        },
+        {
+          "rank": 2,
+          "trajectory_id": "25a8b10b",
+          "state_index": 5,
+          "score": 132.77066598494207
+        },
+        {
+          "rank": 3,
+          "trajectory_id": "933a1321",
+          "state_index": 8,
+          "score": 132.0506353358472
+        },
+        {
+          "rank": 4,
+          "trajectory_id": "6a84271c",
+          "state_index": 4,
+          "score": 129.08332493865947
+        },
+        {
+          "rank": 5,
+          "trajectory_id": "96131e7b",
+          "state_index": 22,
+          "score": 128.6996110644833
+        },
+        {
+          "rank": 6,
+          "trajectory_id": "96131e7b",
+          "state_index": 16,
+          "score": 128.30500872068313
+        },
+        {
+          "rank": 7,
+          "trajectory_id": "fa42acc1",
+          "state_index": 3,
+          "score": 127.65976360104075
+        },
+        {
+          "rank": 8,
+          "trajectory_id": "96131e7b",
+          "state_index": 3,
+          "score": 127.47510650876391
+        },
+        {
+          "rank": 9,
+          "trajectory_id": "96131e7b",
+          "state_index": 10,
+          "score": 127.1914792229287
+        },
+        {
+          "rank": 10,
+          "trajectory_id": "38b757f1",
+          "state_index": 3,
+          "score": 125.64095104237758
+        }
+      ]
+    }
+  },
+  "target_field_matches": {
+    "goal": {
+      "matched_unique_count": 8,
+      "matched_unique_terms": [
+        "and",
+        "filter",
+        "incident",
+        "list",
+        "mark",
+        "on",
+        "short",
+        "the"
+      ]
+    },
+    "outcome": {
+      "matched_unique_count": 0,
+      "matched_unique_terms": []
+    },
+    "url": {
+      "matched_unique_count": 0,
+      "matched_unique_terms": []
+    },
+    "action": {
+      "matched_unique_count": 0,
+      "matched_unique_terms": []
+    },
+    "thoughts": {
+      "matched_unique_count": 8,
+      "matched_unique_terms": [
+        "and",
+        "edit",
+        "filter",
+        "filters",
+        "list",
+        "open",
+        "personal",
+        "the"
+      ]
+    },
+    "text": {
+      "matched_unique_count": 22,
+      "matched_unique_terms": [
+        "edit",
+        "filter",
+        "filters",
+        "in",
+        "incident",
+        "incidents",
+        "list",
+        "more",
+        "none",
+        "on",
+        "one",
+        "open",
+        "option",
+        "or",
+        "page",
+        "personal",
+        "portal",
+        "servicenow",
+        "short",
+        "the",
+        "when",
+        "with"
+      ]
+    }
+  },
+  "integrity": {
+    "gold_answer_used_in_ranking": false,
+    "target_state_identity_used_only_posthoc": true,
+    "counterfactual_modes_use_no_gold": true,
+    "reader_invoked": false
+  }
+}
