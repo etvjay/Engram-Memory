@@ -1,0 +1,36 @@
+{
+  "question_id": "01307e07",
+  "coverage": "SMOKE",
+  "n_examples": 1,
+  "gold": "Incident Mobile, Incident Portal, My Open Incidents",
+  "a2_flat": {
+    "answer": "Incident - Incidents",
+    "score": 0.0,
+    "query_seconds": 2.999142999004107,
+    "original_tokens": 9257,
+    "final_tokens": 9257,
+    "truncated": false
+  },
+  "a3_original": {
+    "answer": "Incidents",
+    "score": 0.0,
+    "query_seconds": 3.1848816869969596,
+    "original_tokens": 27277,
+    "final_tokens": 11265,
+    "truncated": true
+  },
+  "a3_core_first": {
+    "answer": "Incident - Assigned To",
+    "score": 0.0,
+    "query_seconds": 3.155833322001854,
+    "original_tokens": 27277,
+    "final_tokens": 11440,
+    "truncated": true
+  },
+  "deltas": {
+    "a3_core_first_vs_a2_score": 0.0,
+    "a3_core_first_vs_original_a3_score": 0.0,
+    "a3_core_first_vs_a2_query_seconds": 0.156690322997747
+  },
+  "verdict": "PACKING_FIXED_BUT_NO_ANSWER_QUALITY_GAIN"
+}
