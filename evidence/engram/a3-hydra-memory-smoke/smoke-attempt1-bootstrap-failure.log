@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "/home/ubuntu/work/Engram-Memory/scripts/smoke_longmemeval_hydra.py", line 93, in <module>
+    main()
+  File "/home/ubuntu/work/Engram-Memory/scripts/smoke_longmemeval_hydra.py", line 36, in main
+    from engram.longmemeval.hydra_memory import EngramHydraMemory
+  File "/home/ubuntu/work/Engram-Memory/engram/longmemeval/hydra_memory.py", line 15, in <module>
+    from memory_modules.memory import Memory, MemoryContextItem, register_memory, require
+  File "/home/ubuntu/work/LongMemEval-V2/memory_modules/memory.py", line 228, in <module>
+    from .agentrunbook_c_v2 import AgentRunbookCV2  # noqa: E402,F401
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/work/LongMemEval-V2/memory_modules/agentrunbook_c_v2.py", line 24, in <module>
+    from .oai_agents_sdk import (
+  File "/home/ubuntu/work/LongMemEval-V2/memory_modules/oai_agents_sdk.py", line 14, in <module>
+    import httpx
+ModuleNotFoundError: No module named 'httpx'

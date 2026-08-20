@@ -348,10 +348,15 @@ Applications demonstrate why the primitive matters. They do not redefine whether
 Hack Hydra Track 03 alignment       DEFINED
 Benchmark authority order           DEFINED
 LongMemEval baseline                DEFINED / NOT_RUN
-LongMemEval-V2 baseline             DEFINED / NOT_RUN
+LongMemEval-V2 substrate            FULL MULTIMODAL VALIDATED / SCORE NOT_RUN
+LongMemEval-V2 A3 smoke             TESTED / SMOKE / n_examples=1
 BEAM baseline                       DEFINED / NOT_RUN
-HydraDB OSS runtime                 NOT_RUN
-HydraDB graph integration           PROPOSED
+HydraDB OSS runtime                 TESTED
+HydraDB restart durability          TESTED
+HydraDB Bolt retrieval              TESTED
+HydraDB benchmark graph integration TESTED / A3 SMOKE
+A2 vs A3 graph ablation             NOT_RUN
+Graph-native advantage claim        BLOCKED UNTIL A2 vs A3 EVIDENCE
 Engram causal proof on Hydra        PROPOSED
 Temporal repair                     PROPOSED
 Submission repo eligibility         PASS — fresh repository

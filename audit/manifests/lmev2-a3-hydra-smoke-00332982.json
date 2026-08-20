@@ -1,0 +1,75 @@
+{
+  "run_id": "lmev2-a3-hydra-smoke-00332982",
+  "started_at": "2026-08-20T06:34:16.854880+00:00",
+  "status": "TESTED",
+  "git": {
+    "submission_commit": "3201a7b2a334544ec81044557519665a5f4bbf8d",
+    "engram_upstream_commit": null,
+    "hydradb_commit": "6a2fbb192f37f51a93690a2ae2d2f5e27e6e4219"
+  },
+  "benchmark": {
+    "name": "LongMemEval-V2",
+    "source_commit": "2cc8c540bdb87fe6761629b585e727e1c4704520",
+    "split": "small-substrate-smoke",
+    "coverage": "SMOKE",
+    "n_examples": 1,
+    "dataset_filter": "First non-empty JSONL record in trajectories.jsonl; no --trajectory-id supplied",
+    "trajectory_id": "00332982",
+    "query_selection": "No --query supplied; used visible trajectory goal as fallback query"
+  },
+  "models": {
+    "retrieval_model": null,
+    "reader_model": null,
+    "notes": "No model inference used by this smoke."
+  },
+  "retrieval": {
+    "ablation": "A3",
+    "memory_type": "engram_hydra",
+    "retrieval_mode": "graph",
+    "candidate_selector": "local lexical overlap",
+    "candidate_top_k": 1,
+    "candidate_count": 1,
+    "hydra_state_reads": 3,
+    "graph_neighbor_states": 2,
+    "context_items": 6,
+    "image_items": 3
+  },
+  "hydradb": {
+    "repository": "hydra-db/hydradb",
+    "commit": "6a2fbb192f37f51a93690a2ae2d2f5e27e6e4219",
+    "runtime_pid": 16027,
+    "bolt_uri": "bolt://127.0.0.1:7687",
+    "database": "default",
+    "graph_namespace": "engram",
+    "graph_id": "engram-memory",
+    "cell_id": "cell-0",
+    "storage_backend": "local object-store-backed HydraDB runtime",
+    "benchmark_memory_write": "PASS",
+    "benchmark_evidence_read": "PASS",
+    "typed_graph_traversal": "PASS",
+    "runtime_remained_live": "PASS"
+  },
+  "hardware": {
+    "hostname": "ip-172-31-1-44",
+    "architecture": "x86_64",
+    "cpu_count": 2
+  },
+  "metrics": {
+    "ingest": "PASS",
+    "query": "PASS",
+    "smoke_exit_status": 0
+  },
+  "artifacts": [
+    "evidence/engram/a3-hydra-memory-smoke/smoke-attempt1-bootstrap-failure.log",
+    "evidence/engram/a3-hydra-memory-smoke/smoke-attempt2.log"
+  ],
+  "notes": [
+    "Attempt 1 failed during benchmark dependency import before Engram initialized.",
+    "Attempt 1 is not classified as an Engram functional failure.",
+    "Attempt 2 exercised a real LongMemEval-V2 trajectory.",
+    "No question id, question type, gold answer, evidence label, or evaluator metadata was used.",
+    "This run proves A3 functionality at SMOKE coverage only.",
+    "No graph-advantage claim is authorized until adjacent A2 vs A3 comparison."
+  ],
+  "recorded_at": "2026-08-20T06:35:57.801472+00:00"
+}
