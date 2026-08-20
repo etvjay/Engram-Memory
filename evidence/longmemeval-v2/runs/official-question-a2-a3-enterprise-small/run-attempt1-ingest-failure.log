@@ -1,0 +1,25 @@
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Traceback (most recent call last):
+  File "/home/ubuntu/work/Engram-Memory/scripts/ablate_lmev2_official_question.py", line 270, in <module>
+    main()
+  File "/home/ubuntu/work/Engram-Memory/scripts/ablate_lmev2_official_question.py", line 139, in main
+    flat.insert(trajectory)
+  File "/home/ubuntu/work/Engram-Memory/engram/longmemeval/hydra_memory.py", line 269, in insert
+    ).consume()
+      ^^^^^^^^^
+  File "/home/ubuntu/work/Engram-Memory/.venv-hydra/lib/python3.12/site-packages/neo4j/_sync/work/result.py", line 570, in consume
+    self._exhaust()
+  File "/home/ubuntu/work/Engram-Memory/.venv-hydra/lib/python3.12/site-packages/neo4j/_sync/work/result.py", line 500, in _exhaust
+    for _ in self:
+  File "/home/ubuntu/work/Engram-Memory/.venv-hydra/lib/python3.12/site-packages/neo4j/_sync/work/result.py", line 409, in __iter__
+    self._connection.fetch_message()
+  File "/home/ubuntu/work/Engram-Memory/.venv-hydra/lib/python3.12/site-packages/neo4j/_sync/io/_common.py", line 193, in inner
+    func(*args, **kwargs)
+  File "/home/ubuntu/work/Engram-Memory/.venv-hydra/lib/python3.12/site-packages/neo4j/_sync/io/_bolt.py", line 868, in fetch_message
+    res = self._process_message(tag, fields)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/work/Engram-Memory/.venv-hydra/lib/python3.12/site-packages/neo4j/_sync/io/_bolt5.py", line 496, in _process_message
+    response.on_failure(summary_metadata or {})
+  File "/home/ubuntu/work/Engram-Memory/.venv-hydra/lib/python3.12/site-packages/neo4j/_sync/io/_common.py", line 263, in on_failure
+    raise self._hydrate_error(metadata)
+neo4j.exceptions.DatabaseError: {neo4j_code: Neo.DatabaseError.General.UnknownError} {message: internal query execution error} {gql_status: 50N42} {gql_status_description: error: general processing exception - unexpected error. internal query execution error}
