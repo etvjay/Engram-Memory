@@ -1,0 +1,164 @@
+{
+  "benchmark": {
+    "name": "LongMemEval-V2",
+    "domain": "enterprise",
+    "tier": "small",
+    "question_id": "01307e07",
+    "question_text": "I am working with our ServiceNow portal. On the Incidents list page, when I open the \"Filters\" dropdown, excluding \"Edit personal filters\" and \"-- None --\", which filter option labels contain the substring \"Incident\"?\n\nMark your final answer (should be one or more short phrases) in \\boxed{}.",
+    "question_image": null,
+    "haystack_size": 100,
+    "question_selection": "exact --question-id"
+  },
+  "integrity": {
+    "gold_answer_used_by_memory": false,
+    "question_type_used_by_memory": false,
+    "evaluator_metadata_used_by_memory": false,
+    "haystack_scope_exact": true
+  },
+  "controlled_variables": {
+    "same_question": true,
+    "same_question_image": true,
+    "same_haystack": true,
+    "same_candidate_selector": true,
+    "candidate_selector": "local lexical overlap",
+    "candidate_top_k": 3,
+    "candidate_vertex_ids_equal": true,
+    "candidate_vertex_ids": [
+      5220113762270329525,
+      7020613431648098043,
+      5033595772493849588
+    ],
+    "same_hydra_database": "default"
+  },
+  "ingestion": {
+    "haystack_trajectories": 100,
+    "seconds": 83.84780530699936
+  },
+  "a2_flat": {
+    "retrieval_mode": "flat",
+    "context_ordering": "candidate-core-first",
+    "candidate_count": 3,
+    "candidate_vertex_ids": [
+      5220113762270329525,
+      7020613431648098043,
+      5033595772493849588
+    ],
+    "hydra_state_reads": 3,
+    "hydra_chunk_reads": 36,
+    "graph_neighbor_states": 0,
+    "context_items": 6,
+    "storage_schema": "bounded-content-chunks-v2",
+    "chunk_byte_budget": 8192,
+    "state_refs": [
+      {
+        "trajectory_id": "4db02b16",
+        "state_index": 4
+      },
+      {
+        "trajectory_id": "25a8b10b",
+        "state_index": 5
+      },
+      {
+        "trajectory_id": "933a1321",
+        "state_index": 8
+      }
+    ],
+    "image_items": 3,
+    "query_seconds": 3.0267750229977537
+  },
+  "a3_graph": {
+    "retrieval_mode": "graph",
+    "context_ordering": "candidate-core-first",
+    "candidate_count": 3,
+    "candidate_vertex_ids": [
+      5220113762270329525,
+      7020613431648098043,
+      5033595772493849588
+    ],
+    "hydra_state_reads": 9,
+    "hydra_chunk_reads": 93,
+    "graph_neighbor_states": 6,
+    "context_items": 18,
+    "storage_schema": "bounded-content-chunks-v2",
+    "chunk_byte_budget": 8192,
+    "state_refs": [
+      {
+        "trajectory_id": "4db02b16",
+        "state_index": 4
+      },
+      {
+        "trajectory_id": "25a8b10b",
+        "state_index": 5
+      },
+      {
+        "trajectory_id": "933a1321",
+        "state_index": 8
+      },
+      {
+        "trajectory_id": "4db02b16",
+        "state_index": 3
+      },
+      {
+        "trajectory_id": "4db02b16",
+        "state_index": 5
+      },
+      {
+        "trajectory_id": "25a8b10b",
+        "state_index": 4
+      },
+      {
+        "trajectory_id": "25a8b10b",
+        "state_index": 6
+      },
+      {
+        "trajectory_id": "933a1321",
+        "state_index": 7
+      },
+      {
+        "trajectory_id": "933a1321",
+        "state_index": 9
+      }
+    ],
+    "image_items": 9,
+    "query_seconds": 3.023395657997753
+  },
+  "delta": {
+    "graph_delta_present": true,
+    "additional_state_refs": [
+      {
+        "trajectory_id": "25a8b10b",
+        "state_index": 4
+      },
+      {
+        "trajectory_id": "25a8b10b",
+        "state_index": 6
+      },
+      {
+        "trajectory_id": "4db02b16",
+        "state_index": 3
+      },
+      {
+        "trajectory_id": "4db02b16",
+        "state_index": 5
+      },
+      {
+        "trajectory_id": "933a1321",
+        "state_index": 7
+      },
+      {
+        "trajectory_id": "933a1321",
+        "state_index": 9
+      }
+    ],
+    "additional_hydra_state_reads": 6,
+    "additional_graph_neighbor_states": 6,
+    "additional_context_items": 12,
+    "additional_image_items": 6
+  },
+  "claims": {
+    "official_question_path_exercised": true,
+    "official_haystack_scope_exercised": true,
+    "graph_capability_delta_present": true,
+    "answer_quality_evaluated": false
+  }
+}

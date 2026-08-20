@@ -948,6 +948,9 @@ class EngramHydraMemory(Memory):
         graph_neighbor_states = 0
         hydra_state_reads = 0
         hydra_chunk_reads = 0
+        fetched_contexts: list[
+            tuple[StateRecord, list[StateRecord]]
+        ] = []
 
         for candidate in candidates:
             states, neighbor_count, chunk_reads = (
@@ -957,30 +960,66 @@ class EngramHydraMemory(Memory):
             hydra_state_reads += len(states)
             hydra_chunk_reads += chunk_reads
 
-            for state in states:
-                if state.vertex_id in seen_states:
-                    continue
-                seen_states.add(state.vertex_id)
+            current = next(
+                (
+                    state
+                    for state in states
+                    if state.vertex_id == candidate.vertex_id
+                ),
+                None,
+            )
+            require(
+                current is not None,
+                (
+                    "Hydra graph context omitted selected candidate "
+                    f"{candidate.vertex_id}"
+                ),
+            )
+
+            neighbors = [
+                state
+                for state in states
+                if state.vertex_id != candidate.vertex_id
+            ]
+            fetched_contexts.append((current, neighbors))
+
+        # The official LongMemEval-V2 harness truncates memory context by
+        # prefix. Emit every selected candidate before graph expansion so
+        # graph neighbors cannot evict higher-priority retrieval seeds.
+        ordered_states: list[StateRecord] = [
+            current
+            for current, _ in fetched_contexts
+        ]
+
+        if self.retrieval_mode == "graph":
+            for _, neighbors in fetched_contexts:
+                ordered_states.extend(neighbors)
+
+        for state in ordered_states:
+            if state.vertex_id in seen_states:
+                continue
+            seen_states.add(state.vertex_id)
+            context.append(
+                {
+                    "type": "text",
+                    "value": self._format_state(state),
+                }
+            )
+            if (
+                self.include_images
+                and state.screenshot
+                and Path(state.screenshot).is_file()
+            ):
                 context.append(
                     {
-                        "type": "text",
-                        "value": self._format_state(state),
+                        "type": "image",
+                        "value": state.screenshot,
                     }
                 )
-                if (
-                    self.include_images
-                    and state.screenshot
-                    and Path(state.screenshot).is_file()
-                ):
-                    context.append(
-                        {
-                            "type": "image",
-                            "value": state.screenshot,
-                        }
-                    )
 
         self._last_query_debug = {
             "retrieval_mode": self.retrieval_mode,
+            "context_ordering": "candidate-core-first",
             "candidate_count": len(candidates),
             "candidate_vertex_ids": [
                 state.vertex_id for state in candidates
