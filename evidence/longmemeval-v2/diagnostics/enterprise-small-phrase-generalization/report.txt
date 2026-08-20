@@ -1,0 +1,115 @@
+ENTERPRISE_QUESTIONS=211
+TRAJECTORY_STATE_CACHE=PASS
+Q=01307e07 current=128 phrase_state=1 phrase_traj=1
+Q=025db8ef current=1 phrase_state=7 phrase_traj=4
+Q=057a2d4d current=1 phrase_state=1 phrase_traj=1
+Q=080b0218 current=2 phrase_state=2 phrase_traj=1
+Q=0cf979c4 current=1 phrase_state=41 phrase_traj=3
+Q=0d07143c current=261 phrase_state=66 phrase_traj=8
+Q=0f8c85a6 current=95 phrase_state=1 phrase_traj=1
+Q=0f970f01 current=24 phrase_state=2 phrase_traj=1
+Q=106c321b current=291 phrase_state=734 phrase_traj=23
+Q=14a823df current=1 phrase_state=1 phrase_traj=1
+Q=17a03f9b current=93 phrase_state=1 phrase_traj=1
+Q=19367bc7 current=1 phrase_state=2 phrase_traj=1
+Q=229675cd current=26 phrase_state=64 phrase_traj=4
+Q=237d2cc5 current=1 phrase_state=5 phrase_traj=2
+Q=23c3e290 current=1 phrase_state=1 phrase_traj=1
+Q=25b00876 current=1 phrase_state=1 phrase_traj=1
+Q=2721ca7f current=170 phrase_state=380 phrase_traj=13
+Q=2975030d current=1040 phrase_state=52 phrase_traj=18
+Q=2b96f402 current=231 phrase_state=69 phrase_traj=3
+Q=2e90de97 current=1 phrase_state=1 phrase_traj=1
+Q=32909aa1 current=1 phrase_state=8 phrase_traj=1
+Q=32d04f31 current=1 phrase_state=5 phrase_traj=1
+Q=32e719c2 current=1 phrase_state=1 phrase_traj=1
+Q=38726e61 current=116 phrase_state=186 phrase_traj=11
+Q=3a131a42 current=4 phrase_state=1 phrase_traj=1
+Q=3b375e30 current=1 phrase_state=1 phrase_traj=1
+Q=3fd81278 current=1 phrase_state=1 phrase_traj=1
+Q=41a18e5c current=12 phrase_state=1 phrase_traj=1
+Q=42a55762 current=1 phrase_state=1 phrase_traj=1
+Q=4755f316 current=92 phrase_state=205 phrase_traj=12
+Q=4c6d1eb7 current=124 phrase_state=1 phrase_traj=1
+Q=4df5e6b4 current=1 phrase_state=7 phrase_traj=1
+Q=4ed01379 current=1 phrase_state=1 phrase_traj=1
+Q=50711c52 current=1 phrase_state=1 phrase_traj=1
+Q=5aaf0f61 current=1 phrase_state=1 phrase_traj=1
+Q=5b249b5c current=4 phrase_state=10 phrase_traj=1
+Q=5f100f22 current=1 phrase_state=1 phrase_traj=1
+Q=634973c3 current=141 phrase_state=1 phrase_traj=1
+Q=658fa827 current=21 phrase_state=7 phrase_traj=2
+Q=668f7b74 current=19 phrase_state=1 phrase_traj=1
+Q=679111c6 current=1 phrase_state=39 phrase_traj=4
+Q=68107cba current=1 phrase_state=1 phrase_traj=1
+Q=6a7808c5 current=1 phrase_state=1 phrase_traj=1
+Q=6cb8ce37 current=1 phrase_state=1 phrase_traj=1
+Q=71e61e15 current=1 phrase_state=1 phrase_traj=1
+Q=73b6738b current=1 phrase_state=3 phrase_traj=1
+Q=767e4106 current=1 phrase_state=10 phrase_traj=1
+Q=7a07e9a0 current=1 phrase_state=1 phrase_traj=1
+Q=82cdfcc3 current=113 phrase_state=4 phrase_traj=4
+Q=83c35034 current=2 phrase_state=1 phrase_traj=1
+Q=85251f36 current=1 phrase_state=1 phrase_traj=1
+Q=85fc5722 current=125 phrase_state=78 phrase_traj=15
+Q=876c720a current=2785 phrase_state=752 phrase_traj=5
+Q=87711b62 current=6 phrase_state=6 phrase_traj=2
+Q=89439d62 current=1 phrase_state=1 phrase_traj=1
+Q=8b09f378 current=1 phrase_state=2 phrase_traj=1
+Q=8b2a9dd3 current=2 phrase_state=1 phrase_traj=1
+Q=8e320e42 current=1 phrase_state=1 phrase_traj=1
+Q=8f752563 current=2 phrase_state=1 phrase_traj=1
+Q=901b7d17 current=125 phrase_state=53 phrase_traj=2
+Q=90df8253 current=5 phrase_state=1 phrase_traj=1
+Q=927c65a2 current=1 phrase_state=34 phrase_traj=1
+Q=95ae824f current=1 phrase_state=62 phrase_traj=15
+Q=9680f077 current=21 phrase_state=2 phrase_traj=2
+Q=9c074855 current=4 phrase_state=1 phrase_traj=1
+Q=9c24f41e current=1 phrase_state=8 phrase_traj=1
+Q=9c32bca6 current=110 phrase_state=1 phrase_traj=1
+Q=a444cec8 current=1 phrase_state=1 phrase_traj=1
+Q=a45edf3e current=1 phrase_state=1 phrase_traj=1
+Q=a482c0d9 current=1 phrase_state=1 phrase_traj=1
+Q=a7edfb7a current=22 phrase_state=41 phrase_traj=2
+Q=aa4a4b7b current=4 phrase_state=1 phrase_traj=1
+Q=aa64a8bd current=1 phrase_state=4 phrase_traj=1
+Q=ad903be2 current=2 phrase_state=1 phrase_traj=1
+Q=adddeaa5 current=1 phrase_state=8 phrase_traj=2
+Q=aedd338d current=1 phrase_state=2 phrase_traj=1
+Q=aef57896 current=1 phrase_state=1 phrase_traj=1
+Q=b54161f8 current=54 phrase_state=1 phrase_traj=1
+Q=b7cc4da2 current=2 phrase_state=4 phrase_traj=1
+Q=bf98bb38 current=1 phrase_state=1 phrase_traj=1
+Q=c0593d69 current=201 phrase_state=309 phrase_traj=5
+Q=c0696888 current=9 phrase_state=154 phrase_traj=7
+Q=c1c000eb current=48 phrase_state=124 phrase_traj=2
+Q=c3dbec17 current=155 phrase_state=1 phrase_traj=1
+Q=c80ca967 current=176 phrase_state=1 phrase_traj=1
+Q=c9568c9b current=40 phrase_state=5 phrase_traj=3
+Q=c9c6a06a current=30 phrase_state=206 phrase_traj=4
+Q=ca8e070b current=1 phrase_state=1 phrase_traj=1
+Q=cf62efad current=8 phrase_state=1 phrase_traj=1
+Q=d0d61088 current=31 phrase_state=176 phrase_traj=2
+Q=d3d7ec75 current=1 phrase_state=2 phrase_traj=2
+Q=d83c4bf7 current=140 phrase_state=1 phrase_traj=1
+Q=dd53ab77 current=2366 phrase_state=631 phrase_traj=9
+Q=e7292dab current=1 phrase_state=2 phrase_traj=1
+Q=e823a94a current=1 phrase_state=1 phrase_traj=1
+Q=e9fde9fe current=23 phrase_state=1 phrase_traj=1
+Q=f0882f6e current=1 phrase_state=1 phrase_traj=1
+Q=f1d8a168 current=1 phrase_state=1 phrase_traj=1
+Q=f1f9de44 current=4 phrase_state=2 phrase_traj=1
+Q=f3496ca5 current=4 phrase_state=15 phrase_traj=1
+Q=f35bac4a current=1 phrase_state=1 phrase_traj=1
+Q=f4b2b1fb current=1 phrase_state=1 phrase_traj=1
+Q=fe41b553 current=1 phrase_state=1 phrase_traj=1
+Q=ff311d07 current=1 phrase_state=1 phrase_traj=1
+
+========================================================================
+GENERALIZATION SUMMARY
+========================================================================
+N_QUESTIONS=104
+CURRENT_TOP3_STATE_RECALL=0.5673076923076923
+PHRASE_TOP3_STATE_RECALL=0.6346153846153846
+PHRASE_TOP3_TRAJECTORY_RECALL=0.8365384615384616
+MULTIQUESTION_RETRIEVAL_DIAGNOSTIC=PASS
