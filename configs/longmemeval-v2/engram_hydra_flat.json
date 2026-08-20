@@ -1,0 +1,13 @@
+{
+  "memory_type": "engram_hydra",
+  "memory_params": {
+    "bolt_uri": "bolt://127.0.0.1:7687",
+    "database": "default",
+    "token_file_env": "ENGRAM_HYDRA_TOKEN_FILE",
+    "data_root_env": "LONGMEMEVAL_V2_DATA_ROOT",
+    "retrieval_mode": "flat",
+    "candidate_top_k": 3,
+    "include_images": true,
+    "max_state_chars": 6000
+  }
+}
