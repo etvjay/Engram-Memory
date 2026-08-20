@@ -1,0 +1,7 @@
+{
+  "questions": 451,
+  "trajectories": 1870,
+  "haystack_questions": 451,
+  "tier": "small",
+  "check_screenshots": true
+}

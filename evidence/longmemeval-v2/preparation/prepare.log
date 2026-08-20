@@ -1,0 +1,13 @@
+{
+  "data_root": "/home/ubuntu/work/LongMemEval-V2/data/longmemeval-v2-full",
+  "screenshots_root": "/home/ubuntu/work/LongMemEval-V2/data/longmemeval-v2-full/screenshots",
+  "source_dirs": [
+    "/home/ubuntu/work/LongMemEval-V2/data/longmemeval-v2-full/trajectory_screenshots/web_screenshots",
+    "/home/ubuntu/work/LongMemEval-V2/data/longmemeval-v2-full/trajectory_screenshots/enterprise_screenshots_base"
+  ],
+  "counts": {
+    "symlinked": 1913,
+    "copied": 0,
+    "skipped": 0
+  }
+}

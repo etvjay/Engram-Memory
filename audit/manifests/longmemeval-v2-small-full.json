@@ -1,0 +1,31 @@
+{
+  "benchmark": "LongMemEval-V2",
+  "tier": "small",
+  "coverage": "FULL",
+  "multimodal": true,
+  "benchmark_repository": "xiaowu0162/LongMemEval-V2",
+  "benchmark_code_commit": "2cc8c540bdb87fe6761629b585e727e1c4704520",
+  "dataset_repository": "xiaowu0162/longmemeval-v2",
+  "dataset_revision": "f152293e235517d504809563c833d7190b8c713b",
+  "hydradb_repository": "hydra-db/hydradb",
+  "hydradb_commit": "6a2fbb192f37f51a93690a2ae2d2f5e27e6e4219",
+  "dataset": {
+    "questions": 451,
+    "trajectories": 1870,
+    "haystack_questions": 451,
+    "runtime_screenshot_links": 1913,
+    "validation": "PASS",
+    "check_screenshots": true
+  },
+  "preparation": {
+    "mode": "symlink",
+    "status": "TESTED",
+    "data_root": "/home/ubuntu/work/LongMemEval-V2/data/longmemeval-v2-full"
+  },
+  "artifacts": [
+    "evidence/longmemeval-v2/preparation/prepare.log",
+    "evidence/longmemeval-v2/preparation/validation-small-full.json",
+    "evidence/longmemeval-v2/preparation/input-checksums.sha256"
+  ],
+  "recorded_at": "2026-08-20T05:57:05.594775+00:00"
+}
