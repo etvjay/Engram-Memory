@@ -404,3 +404,11 @@ Temporal repair                     PROPOSED
 Submission repo eligibility         PASS — fresh repository
 Application layer                   OUT OF SCOPE UNTIL BASELINE PATH RUNS
 ```
+
+PRISM-12 live Hydra replay                  PASS / TESTED / 12-question deterministic mechanism subset
+PRISM-12 exact-seed preservation             PASS / 4 of 4
+PRISM-12 radius-1-only live graph gains       PASS / 4 of 4 / A2 miss -> A3 live recovery
+PRISM-12 radius-1 negative controls           PASS / 4 of 4 remained unrecovered
+PRISM-12 mechanism expectation parity         PASS / 12 of 12
+PRISM-12 diagnostic live evidence hits        A2=4/12 / A3=8/12 / STRATIFIED SUBSET, NOT BENCHMARK RECALL
+PRISM-12 graph execution                      LIVE HYDRA / NEXT_STATE / radius=1
