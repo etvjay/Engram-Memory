@@ -372,7 +372,15 @@ Seed scorer replacement              REQUIRED / NOT_IMPLEMENTED
 Current seed top3 state recall       TESTED / enterprise-small literal cohort / 59/104 = 56.73%
 Phrase seed top3 state recall        TESTED / same cohort / 66/104 = 63.46%
 Phrase top3 trajectory recall        TESTED / same cohort / 87/104 = 83.65%
-Trajectory/fusion graph diagnostic   REQUIRED / NOT_RUN
+Trajectory/fusion graph diagnostic   TESTED / enterprise-small literal cohort / n=104
+Current diverse trajectory recall    TESTED / 77/104 = 74.04%
+Current diverse exact seed recall    TESTED / 67/104 = 64.42%
+Current diverse graph1 recoverable   TESTED / 71/104 = 68.27%
+Phrase diverse trajectory recall     TESTED / 87/104 = 83.65%
+Phrase diverse exact seed recall     TESTED / 74/104 = 71.15%
+Phrase diverse graph1 recoverable    TESTED / 78/104 = 75.00%
+RRF diverse graph1 recoverable       TESTED / 76/104 = 73.08%
+Hydra multi-question graph replay    REQUIRED / NOT_RUN
 Benchmark answer quality            TESTED / SMOKE / n_examples=1 / A2=0 A3=0
 Benchmark quality advantage         NOT OBSERVED / SMOKE / n_examples=1
 Engram causal proof on Hydra        PROPOSED

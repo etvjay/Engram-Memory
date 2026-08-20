@@ -1,0 +1,122 @@
+TRAJECTORY_CACHE=PASS
+Q=01307e07 curT=0 curG=0 phrT=1 phrG=1 rrfT=0 rrfG=0
+Q=025db8ef curT=1 curG=1 phrT=0 phrG=0 rrfT=1 rrfG=1
+Q=057a2d4d curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=080b0218 curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=0cf979c4 curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=0d07143c curT=0 curG=0 phrT=0 phrG=0 rrfT=0 rrfG=0
+Q=0f8c85a6 curT=0 curG=0 phrT=1 phrG=1 rrfT=0 rrfG=0
+Q=0f970f01 curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=106c321b curT=0 curG=0 phrT=0 phrG=0 rrfT=0 rrfG=0
+Q=14a823df curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=17a03f9b curT=0 curG=0 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=19367bc7 curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=229675cd curT=1 curG=1 phrT=0 phrG=0 rrfT=1 rrfG=1
+Q=237d2cc5 curT=1 curG=1 phrT=1 phrG=0 rrfT=1 rrfG=1
+Q=23c3e290 curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=25b00876 curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=2721ca7f curT=0 curG=0 phrT=0 phrG=0 rrfT=0 rrfG=0
+Q=2975030d curT=0 curG=0 phrT=0 phrG=0 rrfT=0 rrfG=0
+Q=2b96f402 curT=0 curG=0 phrT=1 phrG=0 rrfT=1 rrfG=0
+Q=2e90de97 curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=32909aa1 curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=32d04f31 curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=32e719c2 curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=38726e61 curT=0 curG=0 phrT=0 phrG=0 rrfT=0 rrfG=0
+Q=3a131a42 curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=3b375e30 curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=3fd81278 curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=41a18e5c curT=0 curG=0 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=42a55762 curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=4755f316 curT=0 curG=0 phrT=0 phrG=0 rrfT=0 rrfG=0
+Q=4c6d1eb7 curT=1 curG=0 phrT=1 phrG=1 rrfT=1 rrfG=0
+Q=4df5e6b4 curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=4ed01379 curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=50711c52 curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=5aaf0f61 curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=5b249b5c curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=5f100f22 curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=634973c3 curT=0 curG=0 phrT=1 phrG=1 rrfT=0 rrfG=0
+Q=658fa827 curT=0 curG=0 phrT=1 phrG=0 rrfT=1 rrfG=0
+Q=668f7b74 curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=679111c6 curT=1 curG=1 phrT=0 phrG=0 rrfT=1 rrfG=1
+Q=68107cba curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=6a7808c5 curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=6cb8ce37 curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=71e61e15 curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=73b6738b curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=767e4106 curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=7a07e9a0 curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=82cdfcc3 curT=0 curG=0 phrT=0 phrG=0 rrfT=1 rrfG=0
+Q=83c35034 curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=85251f36 curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=85fc5722 curT=0 curG=0 phrT=0 phrG=0 rrfT=0 rrfG=0
+Q=876c720a curT=0 curG=0 phrT=0 phrG=0 rrfT=0 rrfG=0
+Q=87711b62 curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=89439d62 curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=8b09f378 curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=8b2a9dd3 curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=8e320e42 curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=8f752563 curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=901b7d17 curT=0 curG=0 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=90df8253 curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=927c65a2 curT=1 curG=1 phrT=1 phrG=0 rrfT=1 rrfG=1
+Q=95ae824f curT=1 curG=1 phrT=0 phrG=0 rrfT=1 rrfG=1
+Q=9680f077 curT=0 curG=0 phrT=1 phrG=1 rrfT=0 rrfG=0
+Q=9c074855 curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=9c24f41e curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=9c32bca6 curT=0 curG=0 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=a444cec8 curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=a45edf3e curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=a482c0d9 curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=a7edfb7a curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=aa4a4b7b curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=aa64a8bd curT=1 curG=1 phrT=1 phrG=0 rrfT=1 rrfG=1
+Q=ad903be2 curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=adddeaa5 curT=1 curG=1 phrT=1 phrG=0 rrfT=1 rrfG=1
+Q=aedd338d curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=aef57896 curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=b54161f8 curT=1 curG=0 phrT=1 phrG=1 rrfT=1 rrfG=0
+Q=b7cc4da2 curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=bf98bb38 curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=c0593d69 curT=0 curG=0 phrT=0 phrG=0 rrfT=0 rrfG=0
+Q=c0696888 curT=1 curG=0 phrT=0 phrG=0 rrfT=1 rrfG=0
+Q=c1c000eb curT=0 curG=0 phrT=1 phrG=0 rrfT=1 rrfG=0
+Q=c3dbec17 curT=0 curG=0 phrT=1 phrG=1 rrfT=0 rrfG=0
+Q=c80ca967 curT=0 curG=0 phrT=1 phrG=1 rrfT=0 rrfG=0
+Q=c9568c9b curT=0 curG=0 phrT=1 phrG=1 rrfT=0 rrfG=0
+Q=c9c6a06a curT=0 curG=0 phrT=0 phrG=0 rrfT=0 rrfG=0
+Q=ca8e070b curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=cf62efad curT=1 curG=0 phrT=1 phrG=1 rrfT=1 rrfG=0
+Q=d0d61088 curT=1 curG=0 phrT=1 phrG=0 rrfT=1 rrfG=1
+Q=d3d7ec75 curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=d83c4bf7 curT=0 curG=0 phrT=1 phrG=1 rrfT=0 rrfG=0
+Q=dd53ab77 curT=0 curG=0 phrT=0 phrG=0 rrfT=0 rrfG=0
+Q=e7292dab curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=e823a94a curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=e9fde9fe curT=1 curG=0 phrT=1 phrG=1 rrfT=0 rrfG=0
+Q=f0882f6e curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=f1d8a168 curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=f1f9de44 curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=f3496ca5 curT=1 curG=1 phrT=1 phrG=0 rrfT=1 rrfG=1
+Q=f35bac4a curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=f4b2b1fb curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=fe41b553 curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+Q=ff311d07 curT=1 curG=1 phrT=1 phrG=1 rrfT=1 rrfG=1
+
+========================================================================
+A3 FUSION / GRAPH SUMMARY
+========================================================================
+N_QUESTIONS=104
+BASELINE_CURRENT_STATE_TOP3=59
+BASELINE_PHRASE_STATE_TOP3=66
+CURRENT_DIVERSE_TRAJECTORY_TOP3=77
+CURRENT_DIVERSE_EXACT_SEED=67
+CURRENT_DIVERSE_GRAPH1_RECOVERABLE=71
+PHRASE_DIVERSE_TRAJECTORY_TOP3=87
+PHRASE_DIVERSE_EXACT_SEED=74
+PHRASE_DIVERSE_GRAPH1_RECOVERABLE=78
+RRF_DIVERSE_TRAJECTORY_TOP3=84
+RRF_DIVERSE_EXACT_SEED=70
+RRF_DIVERSE_GRAPH1_RECOVERABLE=76
+A3_FUSION_GRAPH_DIAGNOSTIC=PASS
