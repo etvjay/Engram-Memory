@@ -1,0 +1,10 @@
+{
+  "memory_type": "engram_flat_local",
+  "memory_params": {
+    "data_root_env": "LONGMEMEVAL_V2_DATA_ROOT",
+    "candidate_top_k": 3,
+    "include_images": true,
+    "max_state_chars": 6000,
+    "candidate_strategy": "phrase_trajectory_bm25_v1"
+  }
+}

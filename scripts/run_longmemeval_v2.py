@@ -21,6 +21,7 @@ def main() -> None:
     # Importing the adapter registers memory_type=engram_hydra in the official
     # LongMemEval-V2 registry before the harness loads the memory config.
     from engram.longmemeval.hydra_memory import EngramHydraMemory  # noqa: F401
+    from engram.longmemeval.flat_memory import EngramFlatLocalMemory  # noqa: F401
     from evaluation.harness import main as harness_main
 
     harness_main()

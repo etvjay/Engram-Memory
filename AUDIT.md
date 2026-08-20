@@ -412,3 +412,15 @@ PRISM-12 radius-1 negative controls           PASS / 4 of 4 remained unrecovered
 PRISM-12 mechanism expectation parity         PASS / 12 of 12
 PRISM-12 diagnostic live evidence hits        A2=4/12 / A3=8/12 / STRATIFIED SUBSET, NOT BENCHMARK RECALL
 PRISM-12 graph execution                      LIVE HYDRA / NEXT_STATE / radius=1
+PRISM-13 A0 no-memory control                PASS / TESTED / official LongMemEval-V2 no_retrieval
+PRISM-13 A0 empty memory contexts             PASS / 12 of 12
+PRISM-13 A1 non-Hydra flat memory             PASS / TESTED / local prepared-state backend
+PRISM-13 A1 frozen selector parity             PASS / 12 of 12 / phrase_trajectory_bm25_v1 / top_k=3
+PRISM-13 A1 local state reads                  PASS / 36 total / 3 per question
+PRISM-13 A1 Hydra driver attempts              PASS / 0
+PRISM-13 A1 Hydra state reads                  PASS / 0
+PRISM-13 A1 Hydra chunk reads                  PASS / 0
+PRISM-13 A1 graph traversal                    PASS / 0 neighbors
+PRISM-13 A2/A3 frozen semantics                PASS / UNCHANGED
+PRISM-13 coverage                              SUBSET / deterministic 12-question mechanism cohort
+PRISM-13 reader evaluation                     NOT_RUN / control-structure proof only
