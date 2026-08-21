@@ -1,0 +1,64 @@
+{
+  "hydra": {
+    "bolt_uri": "bolt://127.0.0.1:7687",
+    "database": "default",
+    "live_reads_executed": true,
+    "live_writes_executed": true
+  },
+  "integrity": {
+    "allowed_claim": "Engram records live Hydra causal-provenance structure in which recall is distinct from explicit influence, and an influence receipt can connect a recalled experience to a later decision, action, and outcome.",
+    "behavioral_causality_evaluated": false,
+    "changed_action_claimed": false,
+    "counterfactual_experiment_run": false,
+    "structural_provenance_only": true
+  },
+  "origin_experience": {
+    "evidence_state": "OBSERVED",
+    "execution_id": "prism14:execution-a:v1",
+    "interpretation": "Route C failed under thin liquidity",
+    "memory_id": "prism14:memory-a:v1",
+    "outcome_id": "prism14:outcome-a:v1",
+    "outcome_reason": "thin-liquidity",
+    "outcome_status": "FAILURE",
+    "runtime_id": "runtime-a-prism14",
+    "writer_pid": 49843
+  },
+  "proofs": {
+    "action_provenance_recorded": true,
+    "decision_provenance_recorded": true,
+    "distinct_runtime_ids": true,
+    "distinct_writer_processes": true,
+    "execution_to_outcome_to_memory": true,
+    "influence_enum_enforced": true,
+    "later_outcome_recorded": true,
+    "memory_recalled_later": true,
+    "recall_not_equal_influence": true,
+    "recall_with_explicit_influence_valid": true,
+    "recall_without_influence_valid": true
+  },
+  "recall_with_influence": {
+    "action": "preflight-liquidity-check",
+    "action_id": "prism14:action-b1:v1",
+    "decision_choice": "run-liquidity-preflight",
+    "decision_id": "prism14:decision-b1:v1",
+    "execution_id": "prism14:execution-b1:v1",
+    "influence_id": "prism14:influence-b1:v1",
+    "influence_state": "CONSIDERED",
+    "memory_id": "prism14:memory-a:v1",
+    "outcome_id": "prism14:outcome-b1:v1",
+    "outcome_status": "OBSERVED",
+    "recall_id": "prism14:recall-b1:v1",
+    "runtime_id": "runtime-b1-prism14",
+    "writer_pid": 49847
+  },
+  "recall_without_influence": {
+    "execution_id": "prism14:execution-b0:v1",
+    "influence_count": 0,
+    "memory_id": "prism14:memory-a:v1",
+    "recall_id": "prism14:recall-b0:v1",
+    "runtime_id": "runtime-b0-prism14",
+    "writer_pid": 49845
+  },
+  "schema_version": "engram-causal-provenance-v1",
+  "status": "PRISM14_CAUSAL_GRAPH_STRUCTURE_PASS"
+}

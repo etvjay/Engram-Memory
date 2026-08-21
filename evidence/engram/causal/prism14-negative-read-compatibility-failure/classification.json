@@ -1,0 +1,12 @@
+{
+  "status": "FAILED_COMPATIBILITY",
+  "component": "PRISM-14 recall-without-influence negative control",
+  "stage": "B0 read assertion after successful causal writes",
+  "failure": "OPTIONAL MATCH with count(i) uses a bare node binding as an aggregate argument outside the pinned HydraDB executable expression subset",
+  "origin_experience_write_passed": true,
+  "origin_experience_read_passed": true,
+  "b0_causal_writes_completed_before_failure": true,
+  "causal_mutation_repair_regressed": false,
+  "behavioral_causality_evaluated": false,
+  "adaptation": "prove the recall path directly, then issue a separate direct Recall-to-Influence lookup and require zero returned rows"
+}

@@ -1,0 +1,10 @@
+{
+  "status": "PATCHER_FAILED_BEFORE_RELATIONSHIP_REPAIR",
+  "component": "PRISM-14 relationship compatibility adaptation",
+  "failure": "repair script counted only top-level self._run calls and missed the conditional relationship write inside record_outcome",
+  "hydra_new_failure_discovered": false,
+  "relationship_patch_applied": false,
+  "subsequent_runtime_failure_same_as_prior_relationship_compatibility_failure": true,
+  "retrieval_controls_regressed": false,
+  "behavioral_causality_evaluated": false
+}

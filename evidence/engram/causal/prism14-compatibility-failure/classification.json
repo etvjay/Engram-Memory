@@ -1,0 +1,10 @@
+{
+  "status": "FAILED_COMPATIBILITY",
+  "stage": "first Hydra vertex mutation",
+  "component": "PRISM-14 causal provenance",
+  "failure": "scalar MERGE followed by SET is not executable in the pinned HydraDB OpenCypher query engine",
+  "behavioral_causality_evaluated": false,
+  "causal_graph_proof_completed": false,
+  "retrieval_controls_regressed": false,
+  "adaptation": "use HydraDB-supported UNWIND single-row vertex upsert over Bolt"
+}

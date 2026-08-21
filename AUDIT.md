@@ -424,3 +424,18 @@ PRISM-13 A1 graph traversal                    PASS / 0 neighbors
 PRISM-13 A2/A3 frozen semantics                PASS / UNCHANGED
 PRISM-13 coverage                              SUBSET / deterministic 12-question mechanism cohort
 PRISM-13 reader evaluation                     NOT_RUN / control-structure proof only
+PRISM-14 causal provenance graph              PASS / TESTED / LIVE HYDRA
+PRISM-14 origin experience                    PASS / Execution -> Outcome -> Memory
+PRISM-14 later memory recall                  PASS / persisted memory recalled from distinct runtime
+PRISM-14 recall without influence             PASS / explicit Influence edges = 0
+PRISM-14 recall with influence                PASS / explicit Influence state = CONSIDERED
+PRISM-14 RECALL != INFLUENCE                  PASS / mechanically distinct graph states
+PRISM-14 decision provenance                  PASS / Recall -> Influence -> Decision
+PRISM-14 action provenance                    PASS / Decision -> Action -> Outcome
+PRISM-14 runtime separation                   PASS / distinct runtime IDs and writer processes
+PRISM-14 Hydra execution                      PASS / LIVE WRITES + LIVE READS
+PRISM-14 influence enum                       PASS / CONSIDERED | SUPPORTED_ACTION | CONSTRAINED_ACTION | CHANGED_ACTION
+PRISM-14 behavioral causality                 NOT_RUN / structural provenance only
+PRISM-14 CHANGED_ACTION claim                 NOT CLAIMED
+PRISM-14 counterfactual experiment            NOT_RUN / reserved for PRISM-15
+PRISM-14 Hydra compatibility history          PRESERVED / scalar node mutation, scalar relationship mutation, patcher failure, unsupported negative aggregate read

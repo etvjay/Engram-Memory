@@ -1,0 +1,12 @@
+{
+  "status": "FAILED_COMPATIBILITY",
+  "stage": "first causal relationship mutation",
+  "component": "PRISM-14 causal provenance",
+  "failure": "scalar MATCH source/destination followed by MERGE relationship is not executable by the pinned HydraDB mutation engine",
+  "vertex_batch_repair_exercised": true,
+  "relationship_write_completed": false,
+  "behavioral_causality_evaluated": false,
+  "causal_graph_proof_completed": false,
+  "retrieval_controls_regressed": false,
+  "adaptation": "use HydraDB-supported UNWIND single-row MATCH + MERGE relationship batch over Bolt"
+}

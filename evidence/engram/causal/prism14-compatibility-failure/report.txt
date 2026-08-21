@@ -1,0 +1,26 @@
+--- PHASE A: ORIGIN EXPERIENCE ---
+Traceback (most recent call last):
+  File "/home/ubuntu/work/Engram-Memory/scripts/verify_prism14_causal_graph.py", line 764, in <module>
+    main()
+  File "/home/ubuntu/work/Engram-Memory/scripts/verify_prism14_causal_graph.py", line 72, in main
+    store.record_execution(
+  File "/home/ubuntu/work/Engram-Memory/engram/causal/hydra_causal.py", line 211, in record_execution
+    self._run(
+  File "/home/ubuntu/work/Engram-Memory/engram/causal/hydra_causal.py", line 180, in _run
+    session.run(
+  File "/home/ubuntu/work/Engram-Memory/.venv-hydra/lib/python3.12/site-packages/neo4j/_sync/work/session.py", line 338, in run
+    auto_result._run(
+  File "/home/ubuntu/work/Engram-Memory/.venv-hydra/lib/python3.12/site-packages/neo4j/_sync/work/result.py", line 240, in _run
+    self._attach()
+  File "/home/ubuntu/work/Engram-Memory/.venv-hydra/lib/python3.12/site-packages/neo4j/_sync/work/result.py", line 441, in _attach
+    self._connection.fetch_message()
+  File "/home/ubuntu/work/Engram-Memory/.venv-hydra/lib/python3.12/site-packages/neo4j/_sync/io/_common.py", line 193, in inner
+    func(*args, **kwargs)
+  File "/home/ubuntu/work/Engram-Memory/.venv-hydra/lib/python3.12/site-packages/neo4j/_sync/io/_bolt.py", line 868, in fetch_message
+    res = self._process_message(tag, fields)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/work/Engram-Memory/.venv-hydra/lib/python3.12/site-packages/neo4j/_sync/io/_bolt5.py", line 496, in _process_message
+    response.on_failure(summary_metadata or {})
+  File "/home/ubuntu/work/Engram-Memory/.venv-hydra/lib/python3.12/site-packages/neo4j/_sync/io/_common.py", line 263, in on_failure
+    raise self._hydrate_error(metadata)
+neo4j.exceptions.CypherSyntaxError: {neo4j_code: Neo.ClientError.Statement.InvalidSyntax} {message: OpenCypher query is not supported yet: MERGE with following clauses is not executable in Query engine} {gql_status: 50N42} {gql_status_description: error: general processing exception - unexpected error. OpenCypher query is not supported yet: MERGE with following clauses is not executable in Query engine}
