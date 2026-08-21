@@ -1,0 +1,66 @@
+name: Publish canonical evidence index
+
+on:
+  push:
+    branches:
+      - a3-engram-hydra-memory
+    paths:
+      - "audit/manifests/**"
+      - "evidence/longmemeval-v2/**"
+      - "evidence/engram/**"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: engram-evidence-index-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout triggering evidence commit
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.sha }}
+
+      - name: Build canonical index
+        run: |
+          python3 scripts/build_evidence_index.py \
+            --source-commit "${GITHUB_SHA}" \
+            --ref "${GITHUB_REF_NAME}"
+
+      - name: Verify canonical index
+        run: |
+          python3 scripts/build_evidence_index.py \
+            --check \
+            --source-commit "${GITHUB_SHA}" \
+            --ref "${GITHUB_REF_NAME}"
+
+          cd evidence/web
+          sha256sum -c SHA256SUMS
+
+      - name: Publish changed index
+        run: |
+          git config user.name "engram-evidence-bot"
+          git config user.email \
+            "engram-evidence-bot@users.noreply.github.com"
+
+          git add \
+            evidence/web/index.json \
+            evidence/web/SHA256SUMS
+
+          if git diff --cached --quiet; then
+            echo "EVIDENCE_INDEX_ALREADY_CURRENT=PASS"
+            exit 0
+          fi
+
+          git commit \
+            -m "evidence: update canonical web index"
+
+          git push \
+            origin \
+            "HEAD:${GITHUB_REF_NAME}"

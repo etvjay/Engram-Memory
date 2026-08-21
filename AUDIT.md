@@ -439,3 +439,14 @@ PRISM-14 behavioral causality                 NOT_RUN / structural provenance on
 PRISM-14 CHANGED_ACTION claim                 NOT CLAIMED
 PRISM-14 counterfactual experiment            NOT_RUN / reserved for PRISM-15
 PRISM-14 Hydra compatibility history          PRESERVED / scalar node mutation, scalar relationship mutation, patcher failure, unsupported negative aggregate read
+Canonical web evidence producer               PASS / deterministic / committed-source evidence
+Canonical web evidence schema                 engram-evidence-index-v1
+Canonical web evidence source commit          035067f228c02cace4562eecd7a39440992cb9fa
+Canonical web dataset                         LongMemEval-V2 / small / FULL / 451 questions / 1870 trajectories
+Canonical web A0                              TESTED
+Canonical web A1                              TESTED
+Canonical web A2                              TESTED
+Canonical web A3                              TESTED
+Canonical web A4 behavioral causality         NOT_RUN / reserved for PRISM-15
+Canonical web PRISM-14 provenance             TESTED / structural provenance only
+Canonical web publication workflow            CONFIGURED / NOT_RUN

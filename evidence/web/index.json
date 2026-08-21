@@ -1,0 +1,258 @@
+{
+  "commit": "035067f228c02cace4562eecd7a39440992cb9fa",
+  "dataset": {
+    "benchmark": "LongMemEval-V2",
+    "benchmark_code_commit": "2cc8c540bdb87fe6761629b585e727e1c4704520",
+    "coverage": "FULL",
+    "dataset_revision": "f152293e235517d504809563c833d7190b8c713b",
+    "haystack_questions": 451,
+    "hydradb_commit": "6a2fbb192f37f51a93690a2ae2d2f5e27e6e4219",
+    "multimodal": true,
+    "questions": 451,
+    "runtime_screenshot_links": 1913,
+    "tier": "small",
+    "trajectories": 1870,
+    "validation": "PASS"
+  },
+  "experiments": [
+    {
+      "ablation_stage": "A0",
+      "checksums_path": "evidence/longmemeval-v2/prism13/control-structure/SHA256SUMS",
+      "claim_scope": "Official LongMemEval-V2 no_retrieval control over the deterministic 12-question mechanism subset.",
+      "coverage": "SUBSET",
+      "id": "A0",
+      "kind": "CONTROL",
+      "metrics": {
+        "empty_contexts": 12,
+        "memory_type": "no_retrieval",
+        "n_questions": 12
+      },
+      "report_path": "evidence/longmemeval-v2/prism13/control-structure/report.txt",
+      "result_path": "evidence/longmemeval-v2/prism13/control-structure/result.json",
+      "status": "TESTED",
+      "title": "No memory",
+      "warnings": [
+        "Control-structure proof only; reader evaluation NOT_RUN."
+      ]
+    },
+    {
+      "ablation_stage": "A1",
+      "checksums_path": "evidence/longmemeval-v2/prism13/control-structure/SHA256SUMS",
+      "claim_scope": "Genuine non-Hydra flat-memory control with frozen selector parity.",
+      "coverage": "SUBSET",
+      "id": "A1",
+      "kind": "CONTROL",
+      "metrics": {
+        "candidate_strategy": "phrase_trajectory_bm25_v1",
+        "candidate_top_k": 3,
+        "graph_neighbor_states": 0,
+        "hydra_driver_attempts": 0,
+        "hydra_state_reads": 0,
+        "local_state_reads": 36,
+        "n_questions": 12,
+        "selector_matches": 12
+      },
+      "report_path": "evidence/longmemeval-v2/prism13/control-structure/report.txt",
+      "result_path": "evidence/longmemeval-v2/prism13/control-structure/result.json",
+      "status": "TESTED",
+      "title": "Flat local memory",
+      "warnings": []
+    },
+    {
+      "ablation_stage": "A2",
+      "checksums_path": "evidence/longmemeval-v2/prism12/live-mechanism-replay/SHA256SUMS",
+      "claim_scope": "Live Hydra selected-state retrieval over the deterministic PRISM-12 mechanism subset.",
+      "coverage": "SUBSET",
+      "id": "A2",
+      "kind": "CONTROL",
+      "metrics": {
+        "candidate_top_k": 3,
+        "live_evidence_hits": 4,
+        "n_questions": 12,
+        "retrieval_mode": "flat"
+      },
+      "report_path": "evidence/longmemeval-v2/prism12/live-mechanism-replay/report.txt",
+      "result_path": "evidence/longmemeval-v2/prism12/live-mechanism-replay/result.json",
+      "status": "TESTED",
+      "title": "Hydra state retrieval",
+      "warnings": [
+        "Diagnostic live evidence hits; not benchmark recall."
+      ]
+    },
+    {
+      "ablation_stage": "A3",
+      "checksums_path": "evidence/longmemeval-v2/prism12/live-mechanism-replay/SHA256SUMS",
+      "claim_scope": "Same frozen selector as A2 with live NEXT_STATE radius-1 graph expansion.",
+      "coverage": "SUBSET",
+      "id": "A3",
+      "kind": "CONTROL",
+      "metrics": {
+        "candidate_top_k": 3,
+        "graph1_only_recoveries": 4,
+        "graph_radius": 1,
+        "live_evidence_hits": 8,
+        "n_questions": 12,
+        "retrieval_mode": "graph"
+      },
+      "report_path": "evidence/longmemeval-v2/prism12/live-mechanism-replay/report.txt",
+      "result_path": "evidence/longmemeval-v2/prism12/live-mechanism-replay/result.json",
+      "status": "TESTED",
+      "title": "Hydra graph retrieval",
+      "warnings": [
+        "Mechanism subset only; not benchmark recall or answer-quality gain."
+      ]
+    },
+    {
+      "ablation_stage": "A4",
+      "claim_scope": "Memory-OFF versus memory-ON behavioral causal experiment has not run.",
+      "id": "A4",
+      "kind": "CAUSAL",
+      "metrics": {},
+      "status": "NOT_RUN",
+      "title": "Engram causal memory",
+      "warnings": [
+        "PRISM-14 proves structural provenance only.",
+        "CHANGED_ACTION is not claimed."
+      ]
+    },
+    {
+      "checksums_path": "evidence/longmemeval-v2/diagnostics/enterprise-small-a3-radius/SHA256SUMS",
+      "claim_scope": "Post-hoc evidence-distance diagnostic over 104 questions.",
+      "coverage": "SUBSET",
+      "id": "A3-RADIUS-DIAGNOSTIC",
+      "kind": "DIAGNOSTIC",
+      "metrics": {
+        "distance_histogram": {
+          "0": 74,
+          "1": 4,
+          "17": 1,
+          "23": 1,
+          "3": 3,
+          "36": 1,
+          "5": 2,
+          "55": 1,
+          "NO_CORRECT_TRAJECTORY": 17
+        },
+        "n_questions": 104,
+        "radius_hits": {
+          "0": 74,
+          "1": 78,
+          "2": 78,
+          "3": 81,
+          "4": 81,
+          "5": 83
+        },
+        "radius_recall": {
+          "0": 0.7115384615384616,
+          "1": 0.75,
+          "2": 0.75,
+          "3": 0.7788461538461539,
+          "4": 0.7788461538461539,
+          "5": 0.7980769230769231
+        },
+        "same_trajectory_upper_bound": 87
+      },
+      "report_path": "evidence/longmemeval-v2/diagnostics/enterprise-small-a3-radius/report.txt",
+      "result_path": "evidence/longmemeval-v2/diagnostics/enterprise-small-a3-radius/result.json",
+      "status": "TESTED",
+      "title": "A3 Graph Radius Frontier",
+      "warnings": [
+        "POST-HOC diagnostic; Hydra traversal NOT_RUN.",
+        "NO_CORRECT_TRAJECTORY is not a graph distance."
+      ]
+    },
+    {
+      "checksums_path": "evidence/longmemeval-v2/prism12/live-mechanism-replay/SHA256SUMS",
+      "claim_scope": "live radius-1 mechanism replay over deterministic diagnostic strata",
+      "coverage": "SUBSET",
+      "id": "PRISM-12",
+      "kind": "LIVE_MECHANISM",
+      "metrics": {
+        "mechanism_matches": 12,
+        "mechanism_subset_live_hits": {
+          "a2": 4,
+          "a3": 8
+        },
+        "n_questions": 12,
+        "strata": {
+          "exact_seed": {
+            "a2_and_a3_live_recovered": 4,
+            "n": 4
+          },
+          "graph1_only": {
+            "a2_miss_a3_live_recovery": 4,
+            "n": 4
+          },
+          "unrecovered_r1": {
+            "a2_and_a3_live_miss": 4,
+            "n": 4
+          }
+        }
+      },
+      "report_path": "evidence/longmemeval-v2/prism12/live-mechanism-replay/report.txt",
+      "result_path": "evidence/longmemeval-v2/prism12/live-mechanism-replay/result.json",
+      "status": "TESTED",
+      "title": "Live Hydra radius-1 mechanism replay",
+      "warnings": [
+        "Deterministic diagnostic strata; not unbiased benchmark recall."
+      ]
+    },
+    {
+      "checksums_path": "evidence/longmemeval-v2/prism13/control-structure/SHA256SUMS",
+      "claim_scope": "A0 is a genuine no-memory control and A1 is a genuine non-Hydra flat-memory control with frozen selector parity over the deterministic 12-question mechanism subset",
+      "coverage": "SUBSET",
+      "id": "PRISM-13",
+      "kind": "CONTROL",
+      "metrics": {
+        "a0_empty_contexts": 12,
+        "a1_hydra_state_reads": 0,
+        "a1_local_state_reads": 36,
+        "a1_selector_matches": 12,
+        "n_questions": 12
+      },
+      "report_path": "evidence/longmemeval-v2/prism13/control-structure/report.txt",
+      "result_path": "evidence/longmemeval-v2/prism13/control-structure/result.json",
+      "status": "TESTED",
+      "title": "A0/A1 control structure",
+      "warnings": []
+    },
+    {
+      "checksums_path": "evidence/engram/causal/prism14-live-graph/SHA256SUMS",
+      "claim_scope": "Engram records live Hydra causal-provenance structure in which recall is distinct from explicit influence, and an influence receipt can connect a recalled experience to a later decision, action, and outcome.",
+      "coverage": "SMOKE",
+      "id": "PRISM-14",
+      "kind": "CAUSAL",
+      "metrics": {
+        "distinct_runtime_ids": true,
+        "distinct_writer_processes": true,
+        "influence_state": "CONSIDERED",
+        "live_hydra_reads": true,
+        "live_hydra_writes": true,
+        "recall_not_equal_influence": true,
+        "recall_without_influence_count": 0
+      },
+      "report_path": "evidence/engram/causal/prism14-live-graph/report.txt",
+      "result_path": "evidence/engram/causal/prism14-live-graph/result.json",
+      "status": "TESTED",
+      "title": "Live causal provenance graph",
+      "warnings": [
+        "Structural provenance only; behavioral causality NOT_RUN.",
+        "Counterfactual memory-OFF/memory-ON experiment NOT_RUN."
+      ]
+    }
+  ],
+  "generated_at": "2026-08-21T00:17:16+00:00",
+  "latest": {
+    "behavioral_causal_memory": {
+      "id": "A4",
+      "status": "NOT_RUN"
+    },
+    "causal_provenance": "PRISM-14",
+    "control_structure": "PRISM-13",
+    "live_mechanism": "PRISM-12",
+    "radius_diagnostic": "A3-RADIUS-DIAGNOSTIC"
+  },
+  "ref": "a3-engram-hydra-memory",
+  "repository": "etvjay/Engram-Memory",
+  "schema_version": "engram-evidence-index-v1"
+}
