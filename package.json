@@ -1,0 +1,26 @@
+{
+  "name": "engram-memory-submission",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev:web": "vite --config apps/web/vite.config.ts",
+    "build:web": "vite build --config apps/web/vite.config.ts",
+    "test:web:evidence": "vitest run tests/frontend/evidence-contract.test.ts",
+    "check:web": "npm run build:web && npm run test:web:evidence",
+    "check": "tsc -p tsconfig.json --noEmit && npm run check:web"
+  },
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.2.1",
+    "@types/react": "^19.1.10",
+    "@types/react-dom": "^19.1.7",
+    "@vitejs/plugin-react": "^5.0.2",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.3",
+    "vitest": "^3.2.4"
+  }
+}
